@@ -474,5 +474,8 @@ class AntecedentesPatologicos
         $this->idAntecedentesPatologicos = $idAntecedentesPatologicos;
     }
 
-
+    public function __toString()
+    {
+        return $this->getIdAntecedentesPatologicos()."";
+    }
 }

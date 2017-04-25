@@ -83,5 +83,8 @@ class Antecedentes
         $this->idAntecedentes = $idAntecedentes;
     }
 
-
+    public function __toString()
+    {
+        return $this->getPariente()."";
+    }
 }

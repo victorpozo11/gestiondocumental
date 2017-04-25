@@ -86,5 +86,8 @@ class Ciudad
         $this->idProvincia = $idProvincia;
     }
 
-
+    public function __toString()
+    {
+        return $this->getIdAccionvacaciones()."";
+    }
 }

@@ -129,7 +129,10 @@ class AprendizajeBasico
         $this->idAprendizaje = $idAprendizaje;
     }
 
-
+    public function __toString()
+    {
+        return $this->getIdAprendizaje()."";
+    }
 
 
 }
