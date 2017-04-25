@@ -3,10 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="dd99d9fb-3200-4714-92fb-5097290943af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Antecedentes.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Antecedentes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/AntecedentesPatologicos.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/AntecedentesPatologicos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/AprendizajeBasico.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/AprendizajeBasico.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Ciudad.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Ciudad.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Estudiante.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Estudiante.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Pais.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Pais.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Parroquia.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Parroquia.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/PersonaContacto.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/PersonaContacto.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Provincia.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Provincia.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Region.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Region.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Usuario.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Usuario.orm.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,47 +38,69 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Antecedentes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Antecedentes.php">
+      <file leaf-file-name="Estudiante.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="87" column="38" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="231">
+              <caret line="588" column="0" lean-forward="true" selection-start-line="588" selection-start-column="0" selection-end-line="588" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AntecedentesPatologicos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/AntecedentesPatologicos.php">
+      <file leaf-file-name="DatosPersonal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="478" column="52" lean-forward="false" selection-start-line="478" selection-start-column="52" selection-end-line="478" selection-end-column="52" />
+            <state relative-caret-position="245">
+              <caret line="292" column="4" lean-forward="false" selection-start-line="292" selection-start-column="4" selection-end-line="295" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AprendizajeBasico.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/AprendizajeBasico.php">
+      <file leaf-file-name="PersonaContacto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="133" column="40" lean-forward="false" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
+            <state relative-caret-position="279">
+              <caret line="435" column="0" lean-forward="true" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ciudad.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php">
+      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="412">
+              <caret line="406" column="34" lean-forward="false" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getNombre()</find>
+      <find>g</find>
+      <find>ge</find>
+      <find>get</find>
+      <find>getA</find>
+      <find>getApe</find>
+      <find>getApel</find>
+      <find>getApell</find>
+      <find>getApelli</find>
+      <find>$usaTelefono</find>
+      <find>usaTelefono</find>
+      <find>uselefono</find>
+      <find>uelefono</find>
+      <find>lelefono</find>
+      <find>elefono</find>
+      <find>telefono</find>
+      <find>public function __toString\(\)\n    \{\n        return \$this\-\&gt;getApellidos\(\)\.\&quot; \&quot;\.\$this\-\&gt;getNombres\(\)\;\n    \}</find>
+      <find>getApellidos</find>
+    </findStrings>
   </component>
   <component name="FrameworkRootSettings" id="Symfony2">
     <option name="typedPaths">
@@ -92,15 +131,11 @@
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Conducta.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/ConsultaMedica.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/DesarrolloMotorYLenguaje.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/DocumentoEstudiante.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/EgresosSituacionEconomica.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Entidad.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraYFuncionOral.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/FichaLogopedica.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Habilidades.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/HistorialDesarrolloSocioafectivo.php" />
@@ -108,24 +143,29 @@
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/HistoricoInformacion.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/InformacionSalud.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/IngresosSituacionEconomica.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Motricidad.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Role.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/SeguimientoEstudiante.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Sexo.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/TrazaUser.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/UsuarioLdap.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesController.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Antecedentes.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/AntecedentesPatologicos.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/AprendizajeBasico.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" />
       </list>
     </option>
   </component>
@@ -418,6 +458,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IfeeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -588,7 +636,7 @@
       <workItem from="1493009269250" duration="3127000" />
       <workItem from="1493045559786" duration="145000" />
       <workItem from="1493089776505" duration="5591000" />
-      <workItem from="1493130897931" duration="1014000" />
+      <workItem from="1493130897931" duration="3201000" />
     </task>
     <task id="LOCAL-00001" summary="archivos Base de Datos gestión docuemental v1.0">
       <created>1493011841755</created>
@@ -664,7 +712,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9877000" />
+    <option name="totallyTimeSpent" value="12064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -674,6 +722,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -686,7 +735,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -724,87 +772,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/IfeeBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/ConsultaMedica.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Conducta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="291" column="0" lean-forward="true" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/DesarrolloMotorYLenguaje.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -829,34 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Entidad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="269" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraYFuncionOral.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="959" column="0" lean-forward="true" selection-start-line="959" selection-start-column="0" selection-end-line="959" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="560" column="0" lean-forward="true" selection-start-line="560" selection-start-column="0" selection-end-line="560" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -917,58 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Motricidad.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="407" column="0" lean-forward="true" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1005,26 +900,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1137">
-          <caret line="380" column="0" lean-forward="true" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/UsuarioLdap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4061">
-          <caret line="706" column="0" lean-forward="true" selection-start-line="706" selection-start-column="0" selection-end-line="706" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1034,11 +913,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493131923816" expanded="true" signature="64476:64520" ph="..." />
-            <marker date="1493131923816" expanded="true" signature="61703:61720" ph="..." />
-            <marker date="1493131923816" expanded="true" signature="61703:61738" ph="..." />
-            <marker date="1493131923816" expanded="true" signature="61703:61751" ph="..." />
-            <marker date="1493131923816" expanded="true" signature="61703:61766" ph="..." />
+            <marker date="1493134778670" expanded="true" signature="64476:64520" ph="..." />
+            <marker date="1493134778670" expanded="true" signature="66263:66280" ph="..." />
+            <marker date="1493134778670" expanded="true" signature="66263:66298" ph="..." />
+            <marker date="1493134778670" expanded="true" signature="66263:66311" ph="..." />
+            <marker date="1493134778670" expanded="true" signature="66263:66326" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1102,7 +981,7 @@
         <state relative-caret-position="1530">
           <caret line="90" column="108" lean-forward="true" selection-start-line="90" selection-start-column="108" selection-end-line="90" selection-end-column="108" />
           <folding>
-            <element signature="e#41#76#0#PHP" expanded="true" />
+            <element signature="e#41#76#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1131,10 +1010,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Ciudad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Pais.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Parroquia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Provincia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="194">
+          <caret line="112" column="3" lean-forward="true" selection-start-line="112" selection-start-column="3" selection-end-line="115" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="180" column="5" lean-forward="false" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="272" column="5" lean-forward="false" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/DatosPersonal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="75" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Entidad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2464">
+          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Entidad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/Estudiante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="133" column="4" lean-forward="true" selection-start-line="133" selection-start-column="4" selection-end-line="138" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/IfeeBundle/Entity/PersonaContacto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="126" column="4" lean-forward="false" selection-start-line="126" selection-start-column="4" selection-end-line="131" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="215" column="27" lean-forward="false" selection-start-line="215" selection-start-column="27" selection-end-line="215" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="435" column="0" lean-forward="true" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="588" column="0" lean-forward="true" selection-start-line="588" selection-start-column="0" selection-end-line="588" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="292" column="4" lean-forward="false" selection-start-line="292" selection-start-column="4" selection-end-line="295" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="406" column="34" lean-forward="false" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
           <folding />
         </state>
       </provider>

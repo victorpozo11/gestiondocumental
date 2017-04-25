@@ -214,7 +214,6 @@ class Vivienda
      * @ORM\Column(name="OBSERVACIONES", type="text", length=65535, nullable=true)
      */
     private $observaciones;
-
     /**
      * @var integer
      *

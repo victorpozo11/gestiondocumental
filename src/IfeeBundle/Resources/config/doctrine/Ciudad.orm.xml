@@ -8,6 +8,7 @@
       <generator strategy="IDENTITY"/>
     </id>
     <field name="codigo" type="string" column="CODIGO" length="100" nullable="true"/>
+    <field name="nombre" type="text" column="NOMBRE" length="65535" nullable="true"/>
     <many-to-one field="idProvincia" target-entity="Provincia">
       <join-columns>
         <join-column name="ID_PROVINCIA" referenced-column-name="ID_PROVINCIA"/>

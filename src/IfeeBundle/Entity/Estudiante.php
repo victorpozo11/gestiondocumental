@@ -132,6 +132,13 @@ class Estudiante
     private $telefonoTransporte;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="TELEFONO", type="text", length=65535, nullable=true)
+     */
+    private $telefono;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="ID_ESTUDIANTE", type="integer")
@@ -556,6 +563,27 @@ class Estudiante
     public function setIdParroquia($idParroquia)
     {
         $this->idParroquia = $idParroquia;
+    }
+
+    public function __toString()
+    {
+        return $this->getApellidos()." ".$this->getNombres();
+    }
+
+    /**
+     * @return string
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+
+    /**
+     * @param string $telefono
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
     }
 
 

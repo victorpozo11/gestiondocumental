@@ -20,5 +20,6 @@
     <field name="profesion" type="text" column="PROFESION" length="65535" nullable="true"/>
     <field name="lugarTrabajo" type="text" column="LUGAR_TRABAJO" length="65535" nullable="true"/>
     <field name="descripcionDiscapacidad" type="text" column="DESCRIPCION_DISCAPACIDAD" length="65535" nullable="true"/>
+    <field name="telefono" type="text" column="TELEFONO" length="65535" nullable="true"/>
   </entity>
 </doctrine-mapping>

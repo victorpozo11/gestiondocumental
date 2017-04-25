@@ -28,6 +28,7 @@
     <field name="fechaIngresoIfee" type="date" column="FECHA_INGRESO_IFEE" nullable="true"/>
     <field name="transporteLlegada" type="text" column="TRANSPORTE_LLEGADA" length="65535" nullable="true"/>
     <field name="telefonoTransporte" type="integer" column="TELEFONO_TRANSPORTE" nullable="true"/>
+    <field name="telefono" type="text" column="TELEFONO" length="65535" nullable="true"/>
     <many-to-one field="idPais" target-entity="Pais">
       <join-columns>
         <join-column name="ID_PAIS" referenced-column-name="ID_PAIS"/>

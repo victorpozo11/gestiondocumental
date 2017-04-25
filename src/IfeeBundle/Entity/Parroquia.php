@@ -20,6 +20,13 @@ class Parroquia
     private $codigo;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="NOMBRE", type="text", length=65535, nullable=true)
+     */
+    private $nombre;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="ID_PARROQUIA", type="integer")
@@ -86,5 +93,24 @@ class Parroquia
         $this->idCiudad = $idCiudad;
     }
 
+    /**
+     * @return string
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
 
+    /**
+     * @param string $nombre
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    }
+
+    public function __toString()
+    {
+        return $this->getNombre()."";
+    }
 }

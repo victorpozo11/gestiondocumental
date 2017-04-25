@@ -175,5 +175,8 @@ class Ldap
         $this->idLdap = $idLdap;
     }
 
-
+    public function __toString()
+    {
+        return $this->getNombre()."";
+    }
 }

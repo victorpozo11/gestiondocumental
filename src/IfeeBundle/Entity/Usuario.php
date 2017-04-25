@@ -97,6 +97,13 @@ class Usuario
     private $accion;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="TELEFONO", type="text", length=65535, nullable=true)
+     */
+    private $telefono;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="ID_USUARIO", type="integer")
@@ -378,6 +385,25 @@ class Usuario
         $this->idRole = $idRole;
     }
 
+    /**
+     * @return string
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+
+    /**
+     * @param string $telefono
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
+    }
 
 
+    public function __toString()
+    {
+        return $this->getUsuario();
+    }
 }

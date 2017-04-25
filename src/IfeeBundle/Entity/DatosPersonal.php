@@ -290,5 +290,8 @@ class DatosPersonal
         $this->idDatosPersonal = $idDatosPersonal;
     }
 
-
+    public function __toString()
+    {
+        return $this->getApellidos()." ".$this->getNombres();
+    }
 }

@@ -267,5 +267,8 @@ class EstructuraFamiliar
         $this->idConvive = $idConvive;
     }
 
-
+    public function __toString()
+    {
+        return $this->getApellidos()." ".$this->getNombres();
+    }
 }

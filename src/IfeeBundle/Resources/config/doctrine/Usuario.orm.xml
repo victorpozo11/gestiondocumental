@@ -19,6 +19,7 @@
     <field name="fechaExpiracion" type="date" column="FECHA_EXPIRACION" nullable="true"/>
     <field name="rutaFoto" type="string" column="RUTA_FOTO" length="256" nullable="true"/>
     <field name="accion" type="text" column="ACCION" length="65535" nullable="true"/>
+    <field name="telefono" type="text" column="TELEFONO" length="65535" nullable="true"/>
     <many-to-one field="idSexo" target-entity="Sexo">
       <join-columns>
         <join-column name="ID_SEXO" referenced-column-name="ID_SEXO"/>
