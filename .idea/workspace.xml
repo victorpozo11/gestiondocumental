@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd99d9fb-3200-4714-92fb-5097290943af" name="Default" comment="">
+    <list default="true" id="dd99d9fb-3200-4714-92fb-5097290943af" name="Default" comment="CRUD 3 primeros módulos">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ciudad.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/EstructuraFamiliar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Ldap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Pais.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Parroquia.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Provincia.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Region.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Entity/Vivienda.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Ciudad.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Ciudad.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Estudiante.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Estudiante.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Pais.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Pais.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Parroquia.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Parroquia.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/PersonaContacto.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/PersonaContacto.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Provincia.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Provincia.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Region.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Region.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Usuario.orm.xml" afterPath="$PROJECT_DIR$/src/IfeeBundle/Resources/config/doctrine/Usuario.orm.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,7 +50,7 @@
       <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="6902">
               <caret line="406" column="34" lean-forward="false" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
               <folding />
             </state>
@@ -636,7 +615,7 @@
       <workItem from="1493009269250" duration="3127000" />
       <workItem from="1493045559786" duration="145000" />
       <workItem from="1493089776505" duration="5591000" />
-      <workItem from="1493130897931" duration="3201000" />
+      <workItem from="1493130897931" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="archivos Base de Datos gestión docuemental v1.0">
       <created>1493011841755</created>
@@ -708,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493100008088</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="CRUD 3 primeros módulos">
+      <created>1493134821366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1493134821366</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12064000" />
+    <option name="totallyTimeSpent" value="12597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -913,11 +899,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493134778670" expanded="true" signature="64476:64520" ph="..." />
-            <marker date="1493134778670" expanded="true" signature="66263:66280" ph="..." />
-            <marker date="1493134778670" expanded="true" signature="66263:66298" ph="..." />
-            <marker date="1493134778670" expanded="true" signature="66263:66311" ph="..." />
-            <marker date="1493134778670" expanded="true" signature="66263:66326" ph="..." />
+            <marker date="1493139930238" expanded="true" signature="64476:64520" ph="..." />
+            <marker date="1493139930238" expanded="true" signature="62859:62876" ph="..." />
+            <marker date="1493139930238" expanded="true" signature="62859:62894" ph="..." />
+            <marker date="1493139930238" expanded="true" signature="62859:62907" ph="..." />
+            <marker date="1493139930238" expanded="true" signature="62859:62922" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1191,7 +1177,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="6902">
           <caret line="406" column="34" lean-forward="false" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
           <folding />
         </state>
