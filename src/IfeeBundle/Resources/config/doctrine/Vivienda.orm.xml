@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Vivienda" table="vivienda">
+    <id name="idVivienda" type="integer" column="ID_VIVIENDA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tenencia" type="text" column="TENENCIA" length="65535" nullable="true"/>
+    <field name="tipoVivienda" type="text" column="TIPO_VIVIENDA" length="65535" nullable="true"/>
+    <field name="numeroPisos" type="integer" column="NUMERO_PISOS" nullable="true"/>
+    <field name="materialConstruccion" type="text" column="MATERIAL_CONSTRUCCION" length="65535" nullable="true"/>
+    <field name="descripcionVivienda" type="text" column="DESCRIPCION_VIVIENDA" length="65535" nullable="true"/>
+    <field name="numeroTotalCuartos" type="integer" column="NUMERO_TOTAL_CUARTOS" nullable="true"/>
+    <field name="domitorios" type="boolean" column="DOMITORIOS" nullable="true"/>
+    <field name="sala" type="boolean" column="SALA" nullable="true"/>
+    <field name="comedor" type="boolean" column="COMEDOR" nullable="true"/>
+    <field name="cocina" type="boolean" column="COCINA" nullable="true"/>
+    <field name="banio" type="boolean" column="BANIO" nullable="true"/>
+    <field name="tipoBanio" type="text" column="TIPO_BANIO" length="65535" nullable="true"/>
+    <field name="numeroCamas" type="integer" column="NUMERO_CAMAS" nullable="true"/>
+    <field name="hacinamiento" type="boolean" column="HACINAMIENTO" nullable="true"/>
+    <field name="descripcionCapacidadVivienda" type="text" column="DESCRIPCION_CAPACIDAD_VIVIENDA" length="65535" nullable="true"/>
+    <field name="vehiculoPropio" type="boolean" column="VEHICULO_PROPIO" nullable="true"/>
+    <field name="descripcionVehiculo" type="text" column="DESCRIPCION_VEHICULO" length="65535" nullable="true"/>
+    <field name="tipoServicioAgua" type="text" column="TIPO_SERVICIO_AGUA" length="65535" nullable="true"/>
+    <field name="descripcionOtroServicioAgua" type="text" column="DESCRIPCION_OTRO_SERVICIO_AGUA" length="65535" nullable="true"/>
+    <field name="tipoPiso" type="text" column="TIPO_PISO" length="65535" nullable="true"/>
+    <field name="descripcionOtroPiso" type="text" column="DESCRIPCION_OTRO_PISO" length="65535" nullable="true"/>
+    <field name="tipoTecho" type="text" column="TIPO_TECHO" length="65535" nullable="true"/>
+    <field name="descripcionOtroTecho" type="text" column="DESCRIPCION_OTRO_TECHO" length="65535" nullable="true"/>
+    <field name="tipoLuzElectrica" type="text" column="TIPO_LUZ_ELECTRICA" length="65535" nullable="true"/>
+    <field name="alcantarillado" type="boolean" column="ALCANTARILLADO" nullable="true"/>
+    <field name="usaTelefono" type="boolean" column="USA_TELEFONO" nullable="true"/>
+    <field name="tvcable" type="boolean" column="TVCABLE" nullable="true"/>
+    <field name="internet" type="boolean" column="INTERNET" nullable="true"/>
+    <field name="observaciones" type="text" column="OBSERVACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

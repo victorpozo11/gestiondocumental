@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Seguimientoestudiante</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Motorgiros</th>
+                <td>{{ seguimientoEstudiante.motorGiros }}</td>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <td>{% if seguimientoEstudiante.fecha %}{{ seguimientoEstudiante.fecha|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Adicionalesperiodo</th>
+                <td>{{ seguimientoEstudiante.adicionalesPeriodo }}</td>
+            </tr>
+            <tr>
+                <th>Resultados</th>
+                <td>{{ seguimientoEstudiante.resultados }}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ seguimientoEstudiante.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Fechareingreso</th>
+                <td>{% if seguimientoEstudiante.fechaReingreso %}{{ seguimientoEstudiante.fechaReingreso|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Fechaegreso</th>
+                <td>{% if seguimientoEstudiante.fechaEgreso %}{{ seguimientoEstudiante.fechaEgreso|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Causaegreso</th>
+                <td>{{ seguimientoEstudiante.causaEgreso }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ seguimientoEstudiante.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Idseguimiento</th>
+                <td>{{ seguimientoEstudiante.idSeguimiento }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('seguimientoestudiante_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('seguimientoestudiante_edit', { 'idSeguimiento': seguimientoEstudiante.idSeguimiento }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

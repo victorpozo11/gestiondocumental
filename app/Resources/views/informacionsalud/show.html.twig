@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Informacionsalud</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Enfermedadesgraves</th>
+                <td>{{ informacionSalud.enfermedadesGraves }}</td>
+            </tr>
+            <tr>
+                <th>Postnatalaccidentes</th>
+                <td>{{ informacionSalud.postnatalAccidentes }}</td>
+            </tr>
+            <tr>
+                <th>Completovacunas</th>
+                <td>{% if informacionSalud.completoVacunas %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Tomamedicamentos</th>
+                <td>{% if informacionSalud.tomaMedicamentos %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Vacunafaltante</th>
+                <td>{{ informacionSalud.vacunaFaltante }}</td>
+            </tr>
+            <tr>
+                <th>Desconocetomamedicamento</th>
+                <td>{% if informacionSalud.desconoceTomaMedicamento %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Nombremedicamento</th>
+                <td>{{ informacionSalud.nombreMedicamento }}</td>
+            </tr>
+            <tr>
+                <th>Hospitalatendido</th>
+                <td>{{ informacionSalud.hospitalAtendido }}</td>
+            </tr>
+            <tr>
+                <th>Medicotratante</th>
+                <td>{{ informacionSalud.medicoTratante }}</td>
+            </tr>
+            <tr>
+                <th>Idsalud</th>
+                <td>{{ informacionSalud.idSalud }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('informacionsalud_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('informacionsalud_edit', { 'idSalud': informacionSalud.idSalud }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

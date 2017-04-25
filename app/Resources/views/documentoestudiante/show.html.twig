@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Documentoestudiante</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Rutadocumento</th>
+                <td>{{ documentoEstudiante.rutaDocumento }}</td>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <td>{% if documentoEstudiante.fecha %}{{ documentoEstudiante.fecha|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Tipodocumento</th>
+                <td>{{ documentoEstudiante.tipoDocumento }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ documentoEstudiante.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Iddocumento</th>
+                <td>{{ documentoEstudiante.idDocumento }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('documentoestudiante_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('documentoestudiante_edit', { 'idDocumento': documentoEstudiante.idDocumento }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

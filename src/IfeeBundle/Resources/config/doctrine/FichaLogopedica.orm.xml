@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\FichaLogopedica" table="ficha_logopedica">
+    <id name="idLogopedica" type="integer" column="ID_LOGOPEDICA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="motivoConsulta" type="text" column="MOTIVO_CONSULTA" length="65535" nullable="true"/>
+    <field name="caracteristicaVoz" type="text" column="CARACTERISTICA_VOZ" length="65535" nullable="true"/>
+    <field name="caracteristicaRespiracion" type="text" column="CARACTERISTICA_RESPIRACION" length="65535" nullable="true"/>
+    <field name="despitajeAudicion" type="text" column="DESPITAJE_AUDICION" length="65535" nullable="true"/>
+    <field name="impresionDiagnostica" type="text" column="IMPRESION_DIAGNOSTICA" length="65535" nullable="true"/>
+    <field name="observaciones" type="text" column="OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="recomendaciones" type="text" column="RECOMENDACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

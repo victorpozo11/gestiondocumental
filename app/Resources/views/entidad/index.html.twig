@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Entidads list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Razonsocial</th>
+                <th>Nombrecorto</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Ruc</th>
+                <th>Fechacreacion</th>
+                <th>Descripcion</th>
+                <th>Rutalogo</th>
+                <th>Identidad</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entidad in entidads %}
+            <tr>
+                <td><a href="{{ path('entidad_show', { 'idEntidad': entidad.idEntidad }) }}">{{ entidad.razonSocial }}</a></td>
+                <td>{{ entidad.nombreCorto }}</td>
+                <td>{{ entidad.direccion }}</td>
+                <td>{{ entidad.telefono }}</td>
+                <td>{{ entidad.correo }}</td>
+                <td>{{ entidad.ruc }}</td>
+                <td>{% if entidad.fechaCreacion %}{{ entidad.fechaCreacion|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ entidad.descripcion }}</td>
+                <td>{{ entidad.rutaLogo }}</td>
+                <td>{{ entidad.idEntidad }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('entidad_show', { 'idEntidad': entidad.idEntidad }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('entidad_edit', { 'idEntidad': entidad.idEntidad }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('entidad_new') }}">Create a new entidad</a>
+        </li>
+    </ul>
+{% endblock %}

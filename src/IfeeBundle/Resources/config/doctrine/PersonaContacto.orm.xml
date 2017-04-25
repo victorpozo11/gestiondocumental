@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\PersonaContacto" table="persona_contacto">
+    <id name="idContacto" type="integer" column="ID_CONTACTO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombres" type="text" column="NOMBRES" length="65535" nullable="true"/>
+    <field name="apellidos" type="text" column="APELLIDOS" length="65535" nullable="true"/>
+    <field name="cedula" type="integer" column="CEDULA" nullable="true"/>
+    <field name="ocupacion" type="text" column="OCUPACION" length="65535" nullable="true"/>
+    <field name="discapacidad" type="boolean" column="DISCAPACIDAD" nullable="true"/>
+    <field name="usaTelefono" type="boolean" column="USA_TELEFONO" nullable="true"/>
+    <field name="telefono2" type="integer" column="TELEFONO2" nullable="true"/>
+    <field name="telefono3" type="integer" column="TELEFONO3" nullable="true"/>
+    <field name="edad" type="integer" column="EDAD" nullable="true"/>
+    <field name="fechaNacimiento" type="date" column="FECHA_NACIMIENTO" nullable="true"/>
+    <field name="fechaDefuncion" type="date" column="FECHA_DEFUNCION" nullable="true"/>
+    <field name="estadoCivil" type="text" column="ESTADO_CIVIL" length="65535" nullable="true"/>
+    <field name="instruccion" type="text" column="INSTRUCCION" length="65535" nullable="true"/>
+    <field name="profesion" type="text" column="PROFESION" length="65535" nullable="true"/>
+    <field name="lugarTrabajo" type="text" column="LUGAR_TRABAJO" length="65535" nullable="true"/>
+    <field name="descripcionDiscapacidad" type="text" column="DESCRIPCION_DISCAPACIDAD" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Historicoinformacions list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Descripcion</th>
+                <th>Idhistorico</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for historicoInformacion in historicoInformacions %}
+            <tr>
+                <td><a href="{{ path('historicoinformacion_show', { 'idHistorico': historicoInformacion.idHistorico }) }}">{{ historicoInformacion.fecha }}</a></td>
+                <td>{{ historicoInformacion.descripcion }}</td>
+                <td>{{ historicoInformacion.idHistorico }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('historicoinformacion_show', { 'idHistorico': historicoInformacion.idHistorico }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('historicoinformacion_edit', { 'idHistorico': historicoInformacion.idHistorico }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('historicoinformacion_new') }}">Create a new historicoInformacion</a>
+        </li>
+    </ul>
+{% endblock %}

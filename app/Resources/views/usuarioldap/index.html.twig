@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Usuarioldaps list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Idusuarioldap</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for usuarioLdap in usuarioLdaps %}
+            <tr>
+                <td><a href="{{ path('usuarioldap_show', { 'idUsuarioLdap': usuarioLdap.idUsuarioLdap }) }}">{{ usuarioLdap.usuario }}</a></td>
+                <td>{{ usuarioLdap.idUsuarioLdap }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('usuarioldap_show', { 'idUsuarioLdap': usuarioLdap.idUsuarioLdap }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('usuarioldap_edit', { 'idUsuarioLdap': usuarioLdap.idUsuarioLdap }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('usuarioldap_new') }}">Create a new usuarioLdap</a>
+        </li>
+    </ul>
+{% endblock %}

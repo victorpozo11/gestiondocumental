@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Informacionsaluds list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Enfermedadesgraves</th>
+                <th>Postnatalaccidentes</th>
+                <th>Completovacunas</th>
+                <th>Tomamedicamentos</th>
+                <th>Vacunafaltante</th>
+                <th>Desconocetomamedicamento</th>
+                <th>Nombremedicamento</th>
+                <th>Hospitalatendido</th>
+                <th>Medicotratante</th>
+                <th>Idsalud</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for informacionSalud in informacionSaluds %}
+            <tr>
+                <td><a href="{{ path('informacionsalud_show', { 'idSalud': informacionSalud.idSalud }) }}">{{ informacionSalud.enfermedadesGraves }}</a></td>
+                <td>{{ informacionSalud.postnatalAccidentes }}</td>
+                <td>{% if informacionSalud.completoVacunas %}Yes{% else %}No{% endif %}</td>
+                <td>{% if informacionSalud.tomaMedicamentos %}Yes{% else %}No{% endif %}</td>
+                <td>{{ informacionSalud.vacunaFaltante }}</td>
+                <td>{% if informacionSalud.desconoceTomaMedicamento %}Yes{% else %}No{% endif %}</td>
+                <td>{{ informacionSalud.nombreMedicamento }}</td>
+                <td>{{ informacionSalud.hospitalAtendido }}</td>
+                <td>{{ informacionSalud.medicoTratante }}</td>
+                <td>{{ informacionSalud.idSalud }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('informacionsalud_show', { 'idSalud': informacionSalud.idSalud }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('informacionsalud_edit', { 'idSalud': informacionSalud.idSalud }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('informacionsalud_new') }}">Create a new informacionSalud</a>
+        </li>
+    </ul>
+{% endblock %}

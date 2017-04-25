@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Historialeducativo</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nivel</th>
+                <td>{{ historialEducativo.nivel }}</td>
+            </tr>
+            <tr>
+                <th>Cumple</th>
+                <td>{% if historialEducativo.cumple %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Lugar</th>
+                <td>{{ historialEducativo.lugar }}</td>
+            </tr>
+            <tr>
+                <th>Edaddesde</th>
+                <td>{{ historialEducativo.edadDesde }}</td>
+            </tr>
+            <tr>
+                <th>Edadhasta</th>
+                <td>{{ historialEducativo.edadHasta }}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ historialEducativo.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Idhistorial</th>
+                <td>{{ historialEducativo.idHistorial }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('historialeducativo_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('historialeducativo_edit', { 'idHistorial': historialEducativo.idHistorial }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

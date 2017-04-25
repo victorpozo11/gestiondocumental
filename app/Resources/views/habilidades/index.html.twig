@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Habilidades list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Etapa</th>
+                <th>Edad</th>
+                <th>Descripcion</th>
+                <th>Idhabilidad</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for habilidade in habilidades %}
+            <tr>
+                <td><a href="{{ path('habilidades_show', { 'idHabilidad': habilidade.idHabilidad }) }}">{{ habilidade.etapa }}</a></td>
+                <td>{{ habilidade.edad }}</td>
+                <td>{{ habilidade.descripcion }}</td>
+                <td>{{ habilidade.idHabilidad }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('habilidades_show', { 'idHabilidad': habilidade.idHabilidad }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('habilidades_edit', { 'idHabilidad': habilidade.idHabilidad }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('habilidades_new') }}">Create a new habilidade</a>
+        </li>
+    </ul>
+{% endblock %}

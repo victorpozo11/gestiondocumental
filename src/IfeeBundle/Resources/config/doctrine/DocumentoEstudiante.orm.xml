@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\DocumentoEstudiante" table="documento_estudiante">
+    <id name="idDocumento" type="integer" column="ID_DOCUMENTO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="rutaDocumento" type="text" column="RUTA_DOCUMENTO" length="65535" nullable="true"/>
+    <field name="fecha" type="date" column="FECHA" nullable="true"/>
+    <field name="tipoDocumento" type="text" column="TIPO_DOCUMENTO" length="65535" nullable="true"/>
+    <field name="descripcion" type="text" column="DESCRIPCION" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

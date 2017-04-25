@@ -1,5 +1,5 @@
-ifee_bundle_ifee:
-    resource: "@IfeeBundleIfeeBundle/Controller/"
+ifee:
+    resource: "@IfeeBundle/Controller/"
     type:     annotation
     prefix:   /
 

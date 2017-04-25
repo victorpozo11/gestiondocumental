@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\SeguimientoEstudiante" table="seguimiento_estudiante">
+    <id name="idSeguimiento" type="integer" column="ID_SEGUIMIENTO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="motorGiros" type="text" column="MOTOR_GIROS" length="65535" nullable="true"/>
+    <field name="fecha" type="date" column="FECHA" nullable="true"/>
+    <field name="adicionalesPeriodo" type="text" column="ADICIONALES_PERIODO" length="65535" nullable="true"/>
+    <field name="resultados" type="text" column="RESULTADOS" length="65535" nullable="true"/>
+    <field name="observaciones" type="text" column="OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="fechaReingreso" type="date" column="FECHA_REINGRESO" nullable="true"/>
+    <field name="fechaEgreso" type="date" column="FECHA_EGRESO" nullable="true"/>
+    <field name="causaEgreso" type="text" column="CAUSA_EGRESO" length="65535" nullable="true"/>
+    <field name="descripcion" type="text" column="DESCRIPCION" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Motricidads list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Etapa</th>
+                <th>Edad</th>
+                <th>Tipo</th>
+                <th>Idmotricidad</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for motricidad in motricidads %}
+            <tr>
+                <td><a href="{{ path('motricidad_show', { 'idMotricidad': motricidad.idMotricidad }) }}">{{ motricidad.etapa }}</a></td>
+                <td>{{ motricidad.edad }}</td>
+                <td>{{ motricidad.tipo }}</td>
+                <td>{{ motricidad.idMotricidad }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('motricidad_show', { 'idMotricidad': motricidad.idMotricidad }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('motricidad_edit', { 'idMotricidad': motricidad.idMotricidad }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('motricidad_new') }}">Create a new motricidad</a>
+        </li>
+    </ul>
+{% endblock %}

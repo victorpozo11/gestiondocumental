@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Aprendizajebasicos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Actividad</th>
+                <th>Edadlogro</th>
+                <th>Logro</th>
+                <th>Descripcion</th>
+                <th>Idaprendizaje</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for aprendizajeBasico in aprendizajeBasicos %}
+            <tr>
+                <td><a href="{{ path('aprendizajebasico_show', { 'idAprendizaje': aprendizajeBasico.idAprendizaje }) }}">{{ aprendizajeBasico.actividad }}</a></td>
+                <td>{{ aprendizajeBasico.edadLogro }}</td>
+                <td>{% if aprendizajeBasico.logro %}Yes{% else %}No{% endif %}</td>
+                <td>{{ aprendizajeBasico.descripcion }}</td>
+                <td>{{ aprendizajeBasico.idAprendizaje }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('aprendizajebasico_show', { 'idAprendizaje': aprendizajeBasico.idAprendizaje }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('aprendizajebasico_edit', { 'idAprendizaje': aprendizajeBasico.idAprendizaje }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('aprendizajebasico_new') }}">Create a new aprendizajeBasico</a>
+        </li>
+    </ul>
+{% endblock %}

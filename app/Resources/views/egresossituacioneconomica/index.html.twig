@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Egresossituacioneconomicas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Descripcionrubro</th>
+                <th>Montoegreso</th>
+                <th>Observaciones</th>
+                <th>Idegresos</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for egresosSituacionEconomica in egresosSituacionEconomicas %}
+            <tr>
+                <td><a href="{{ path('egresossituacioneconomica_show', { 'idEgresos': egresosSituacionEconomica.idEgresos }) }}">{{ egresosSituacionEconomica.descripcionRubro }}</a></td>
+                <td>{{ egresosSituacionEconomica.montoEgreso }}</td>
+                <td>{{ egresosSituacionEconomica.observaciones }}</td>
+                <td>{{ egresosSituacionEconomica.idEgresos }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('egresossituacioneconomica_show', { 'idEgresos': egresosSituacionEconomica.idEgresos }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('egresossituacioneconomica_edit', { 'idEgresos': egresosSituacionEconomica.idEgresos }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('egresossituacioneconomica_new') }}">Create a new egresosSituacionEconomica</a>
+        </li>
+    </ul>
+{% endblock %}

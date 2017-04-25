@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Documentoestudiantes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rutadocumento</th>
+                <th>Fecha</th>
+                <th>Tipodocumento</th>
+                <th>Descripcion</th>
+                <th>Iddocumento</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for documentoEstudiante in documentoEstudiantes %}
+            <tr>
+                <td><a href="{{ path('documentoestudiante_show', { 'idDocumento': documentoEstudiante.idDocumento }) }}">{{ documentoEstudiante.rutaDocumento }}</a></td>
+                <td>{% if documentoEstudiante.fecha %}{{ documentoEstudiante.fecha|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ documentoEstudiante.tipoDocumento }}</td>
+                <td>{{ documentoEstudiante.descripcion }}</td>
+                <td>{{ documentoEstudiante.idDocumento }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('documentoestudiante_show', { 'idDocumento': documentoEstudiante.idDocumento }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('documentoestudiante_edit', { 'idDocumento': documentoEstudiante.idDocumento }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('documentoestudiante_new') }}">Create a new documentoEstudiante</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ldaps list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Puerto</th>
+                <th>Domonio</th>
+                <th>Basedn</th>
+                <th>User</th>
+                <th>Pass</th>
+                <th>Idldap</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ldap in ldaps %}
+            <tr>
+                <td><a href="{{ path('ldap_show', { 'idLdap': ldap.idLdap }) }}">{{ ldap.nombre }}</a></td>
+                <td>{{ ldap.puerto }}</td>
+                <td>{{ ldap.domonio }}</td>
+                <td>{{ ldap.basedn }}</td>
+                <td>{{ ldap.user }}</td>
+                <td>{{ ldap.pass }}</td>
+                <td>{{ ldap.idLdap }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('ldap_show', { 'idLdap': ldap.idLdap }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('ldap_edit', { 'idLdap': ldap.idLdap }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('ldap_new') }}">Create a new ldap</a>
+        </li>
+    </ul>
+{% endblock %}

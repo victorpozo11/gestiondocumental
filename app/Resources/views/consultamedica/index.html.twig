@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Consultamedicas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Motivoconsulta</th>
+                <th>Diagnosticomedico</th>
+                <th>Prenatalmedicamentos</th>
+                <th>Dosis</th>
+                <th>Problematicaactual</th>
+                <th>Protesis</th>
+                <th>Alergias</th>
+                <th>Idconsulta</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for consultaMedica in consultaMedicas %}
+            <tr>
+                <td><a href="{{ path('consultamedica_show', { 'idConsulta': consultaMedica.idConsulta }) }}">{{ consultaMedica.fecha }}</a></td>
+                <td>{{ consultaMedica.motivoConsulta }}</td>
+                <td>{{ consultaMedica.diagnosticoMedico }}</td>
+                <td>{{ consultaMedica.prenatalMedicamentos }}</td>
+                <td>{{ consultaMedica.dosis }}</td>
+                <td>{{ consultaMedica.problematicaActual }}</td>
+                <td>{{ consultaMedica.protesis }}</td>
+                <td>{{ consultaMedica.alergias }}</td>
+                <td>{{ consultaMedica.idConsulta }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('consultamedica_show', { 'idConsulta': consultaMedica.idConsulta }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('consultamedica_edit', { 'idConsulta': consultaMedica.idConsulta }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('consultamedica_new') }}">Create a new consultaMedica</a>
+        </li>
+    </ul>
+{% endblock %}

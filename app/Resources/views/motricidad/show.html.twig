@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Motricidad</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Etapa</th>
+                <td>{{ motricidad.etapa }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ motricidad.edad }}</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <td>{{ motricidad.tipo }}</td>
+            </tr>
+            <tr>
+                <th>Idmotricidad</th>
+                <td>{{ motricidad.idMotricidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('motricidad_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('motricidad_edit', { 'idMotricidad': motricidad.idMotricidad }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

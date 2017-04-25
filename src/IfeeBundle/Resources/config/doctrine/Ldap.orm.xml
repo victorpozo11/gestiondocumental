@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Ldap" table="ldap">
+    <id name="idLdap" type="integer" column="ID_LDAP">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombre" type="text" column="NOMBRE" length="65535" nullable="true"/>
+    <field name="puerto" type="text" column="PUERTO" length="65535" nullable="true"/>
+    <field name="domonio" type="text" column="DOMONIO" length="65535" nullable="true"/>
+    <field name="basedn" type="text" column="BASEDN" length="65535" nullable="true"/>
+    <field name="user" type="text" column="USER" length="65535" nullable="true"/>
+    <field name="pass" type="text" column="PASS" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

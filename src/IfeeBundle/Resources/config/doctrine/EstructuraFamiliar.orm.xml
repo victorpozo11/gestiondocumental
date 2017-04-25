@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\EstructuraFamiliar" table="estructura_familiar">
+    <id name="idConvive" type="integer" column="ID_CONVIVE">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombres" type="text" column="NOMBRES" length="65535" nullable="true"/>
+    <field name="apellidos" type="text" column="APELLIDOS" length="65535" nullable="true"/>
+    <field name="parentesco" type="text" column="PARENTESCO" length="65535" nullable="true"/>
+    <field name="edad" type="integer" column="EDAD" nullable="true"/>
+    <field name="instruccion" type="text" column="INSTRUCCION" length="65535" nullable="true"/>
+    <field name="ocupacion" type="text" column="OCUPACION" length="65535" nullable="true"/>
+    <field name="discapacidad" type="boolean" column="DISCAPACIDAD" nullable="true"/>
+    <field name="descripcionDiscapacidad" type="text" column="DESCRIPCION_DISCAPACIDAD" length="65535" nullable="true"/>
+    <field name="observacion" type="text" column="OBSERVACION" length="65535" nullable="true"/>
+    <field name="convive" type="boolean" column="CONVIVE" nullable="true"/>
+  </entity>
+</doctrine-mapping>

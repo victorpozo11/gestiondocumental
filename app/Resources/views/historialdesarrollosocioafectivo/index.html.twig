@@ -1,0 +1,187 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Historialdesarrollosocioafectivos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Prenataledadmaternaembarazo</th>
+                <th>Prenatalnumeroembarazos</th>
+                <th>Prenatalabortos</th>
+                <th>Prenatalnumerohijos</th>
+                <th>Prenatalcontrolesembarazo</th>
+                <th>Prenatalnumerolugarhijo</th>
+                <th>Prenatalinfeccionvaginal</th>
+                <th>Prenatalcaidas</th>
+                <th>Prenatalamenazaaborto</th>
+                <th>Prenatalrayosx</th>
+                <th>Prenatalmedicamentos</th>
+                <th>Prenatalalcohol</th>
+                <th>Prenataltabaco</th>
+                <th>Prenataldrogas</th>
+                <th>Prenatalotrosestimulante</th>
+                <th>Prenatalestadoemocionalembarazo</th>
+                <th>Prenatalalimentacionembarazo</th>
+                <th>Prenatalembarazoplanificado</th>
+                <th>Prenataledadgestacional</th>
+                <th>Prenataltipoparto</th>
+                <th>Prenatalcordonumbilicalcuello</th>
+                <th>Postnatalcolor</th>
+                <th>Postnatalllanto</th>
+                <th>Postnatalcuidadosespeciales</th>
+                <th>Postnataltiempo</th>
+                <th>Postnatalhospitalizaciones</th>
+                <th>Postnatalcirugias</th>
+                <th>Postnatalanomalias</th>
+                <th>Postnataldescripcionanomalias</th>
+                <th>Postnatalaccidentes</th>
+                <th>Postnatalpeso</th>
+                <th>Postnataltalla</th>
+                <th>Actividadesvidadiariaalimentacionactual</th>
+                <th>Actividadesvidadiariasuenio</th>
+                <th>Esfinteresobservacion</th>
+                <th>Vestidoobservacion</th>
+                <th>Relacionpadre</th>
+                <th>Relacionmadre</th>
+                <th>Relacionhermanos</th>
+                <th>Relacionludica</th>
+                <th>Metodosdisciplinadescripcion</th>
+                <th>Educacionexpectativaingreso</th>
+                <th>Adicionalesmetodoanticonceptivo</th>
+                <th>Adicionalesbono</th>
+                <th>Adicionalesbonodescripcion</th>
+                <th>Adicionalesedadmental</th>
+                <th>Adicionalesedadfisica</th>
+                <th>Adicionalesperiodo</th>
+                <th>Relacionamigos</th>
+                <th>Metodosdisciplinapega</th>
+                <th>Metodosdisciplinaregania</th>
+                <th>Metodosdisciplinarazona</th>
+                <th>Metodosdisciplinaamenaza</th>
+                <th>Metodosdisciplinaignora</th>
+                <th>Metodosdisciplinaretiraobjeto</th>
+                <th>Metodosdisciplinaninguna</th>
+                <th>Metodosdisciplinaotra</th>
+                <th>Metodosdisciplinadescripcionotra</th>
+                <th>Buencomportamientoelogios</th>
+                <th>Buencomportamientoregalos</th>
+                <th>Buencomportamientocaricias</th>
+                <th>Buencomportamientoningunpremio</th>
+                <th>Buencomportamientocomida</th>
+                <th>Buencomportamientoobjetos</th>
+                <th>Buencomportamientohaceloquelegusta</th>
+                <th>Riesgofamiliarplanificacionfamiliar</th>
+                <th>Riesgofamiliarcualplanificacionfamiliar</th>
+                <th>Riesgofamiliarcomunicacionpareja</th>
+                <th>Riesgofamiliarresponsabledespuesescuela</th>
+                <th>Maltratofisico</th>
+                <th>Maltratopsicologico</th>
+                <th>Maltratosexual</th>
+                <th>Maltratomachismo</th>
+                <th>Maltratoviolenciaintrafamiliar</th>
+                <th>Situacionlegal</th>
+                <th>Idpsicologia2</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for historialDesarrolloSocioafectivo in historialDesarrolloSocioafectivos %}
+            <tr>
+                <td><a href="{{ path('historialdesarrollosocioafectivo_show', { 'idPsicologia2': historialDesarrolloSocioafectivo.idPsicologia2 }) }}">{{ historialDesarrolloSocioafectivo.prenatalEdadMaternaEmbarazo }}</a></td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalNumeroEmbarazos }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalAbortos }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalNumeroHijos }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalControlesEmbarazo %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalNumeroLugarHijo }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalInfeccionVaginal %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalCaidas %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalAmenazaAborto %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalRayosx %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalMedicamentos }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalAlcohol %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalTabaco %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalDrogas %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalOtrosEstimulante }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalEstadoEmocionalEmbarazo }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalAlimentacionEmbarazo }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalEmbarazoPlanificado %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalEdadGestacional }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.prenatalTipoParto }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.prenatalCordonUmbilicalCuello %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalColor }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalLlanto }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.postnatalCuidadosEspeciales %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalTiempo }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.postnatalHospitalizaciones %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalCirugias }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.postnatalAnomalias %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalDescripcionAnomalias }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalAccidentes }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalPeso }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.postnatalTalla }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.actividadesVidaDiariaAlimentacionActual }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.actividadesVidaDiariaSuenio }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.esfinteresObservacion }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.vestidoObservacion }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.relacionPadre }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.relacionMadre }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.relacionHermanos }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.relacionLudica }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.metodosDisciplinaDescripcion }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.educacionExpectativaIngreso }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.adicionalesMetodoAnticonceptivo }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.adicionalesBono %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.adicionalesBonoDescripcion }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.adicionalesEdadMental }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.adicionalesEdadFisica }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.adicionalesPeriodo }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.relacionAmigos }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaPega %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaRegania %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaRazona %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaAmenaza %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaIgnora %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaRetiraObjeto %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaNinguna %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.metodosDisciplinaOtra %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.metodosDisciplinaDescripcionOtra }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoElogios %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoRegalos %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoCaricias %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoNingunPremio %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoComida %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoObjetos %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.buenComportamientoHaceLoQueLeGusta %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.riesgoFamiliarPlanificacionFamiliar %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.riesgoFamiliarCualPlanificacionFamiliar }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.riesgoFamiliarComunicacionPareja }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.riesgoFamiliarResponsableDespuesEscuela }}</td>
+                <td>{% if historialDesarrolloSocioafectivo.maltratoFisico %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.maltratoPsicologico %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.maltratoSexual %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.maltratoMachismo %}Yes{% else %}No{% endif %}</td>
+                <td>{% if historialDesarrolloSocioafectivo.maltratoViolenciaIntrafamiliar %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialDesarrolloSocioafectivo.situacionLegal }}</td>
+                <td>{{ historialDesarrolloSocioafectivo.idPsicologia2 }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('historialdesarrollosocioafectivo_show', { 'idPsicologia2': historialDesarrolloSocioafectivo.idPsicologia2 }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('historialdesarrollosocioafectivo_edit', { 'idPsicologia2': historialDesarrolloSocioafectivo.idPsicologia2 }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('historialdesarrollosocioafectivo_new') }}">Create a new historialDesarrolloSocioafectivo</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Estudiantes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Domicilio</th>
+                <th>Sector</th>
+                <th>Cambiodomicilio</th>
+                <th>Usatelefono</th>
+                <th>Edad</th>
+                <th>Fechanacimiento</th>
+                <th>Rutafoto</th>
+                <th>Riesgofamiliarresponsabledespuesescuela</th>
+                <th>Numerocarnetconadis</th>
+                <th>Carnetconadis</th>
+                <th>Porcentajediscapacidad</th>
+                <th>Fechaingresoifee</th>
+                <th>Transportellegada</th>
+                <th>Telefonotransporte</th>
+                <th>Idestudiante</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for estudiante in estudiantes %}
+            <tr>
+                <td><a href="{{ path('estudiante_show', { 'idEstudiante': estudiante.idEstudiante }) }}">{{ estudiante.nombres }}</a></td>
+                <td>{{ estudiante.apellidos }}</td>
+                <td>{{ estudiante.cedula }}</td>
+                <td>{{ estudiante.domicilio }}</td>
+                <td>{{ estudiante.sector }}</td>
+                <td>{{ estudiante.cambioDomicilio }}</td>
+                <td>{% if estudiante.usaTelefono %}Yes{% else %}No{% endif %}</td>
+                <td>{{ estudiante.edad }}</td>
+                <td>{% if estudiante.fechaNacimiento %}{{ estudiante.fechaNacimiento|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ estudiante.rutaFoto }}</td>
+                <td>{{ estudiante.riesgoFamiliarResponsableDespuesEscuela }}</td>
+                <td>{{ estudiante.numeroCarnetConadis }}</td>
+                <td>{% if estudiante.carnetConadis %}Yes{% else %}No{% endif %}</td>
+                <td>{{ estudiante.porcentajeDiscapacidad }}</td>
+                <td>{% if estudiante.fechaIngresoIfee %}{{ estudiante.fechaIngresoIfee|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ estudiante.transporteLlegada }}</td>
+                <td>{{ estudiante.telefonoTransporte }}</td>
+                <td>{{ estudiante.idEstudiante }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('estudiante_show', { 'idEstudiante': estudiante.idEstudiante }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('estudiante_edit', { 'idEstudiante': estudiante.idEstudiante }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('estudiante_new') }}">Create a new estudiante</a>
+        </li>
+    </ul>
+{% endblock %}

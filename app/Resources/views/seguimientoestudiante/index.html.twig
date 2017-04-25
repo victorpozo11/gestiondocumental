@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Seguimientoestudiantes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Motorgiros</th>
+                <th>Fecha</th>
+                <th>Adicionalesperiodo</th>
+                <th>Resultados</th>
+                <th>Observaciones</th>
+                <th>Fechareingreso</th>
+                <th>Fechaegreso</th>
+                <th>Causaegreso</th>
+                <th>Descripcion</th>
+                <th>Idseguimiento</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for seguimientoEstudiante in seguimientoEstudiantes %}
+            <tr>
+                <td><a href="{{ path('seguimientoestudiante_show', { 'idSeguimiento': seguimientoEstudiante.idSeguimiento }) }}">{{ seguimientoEstudiante.motorGiros }}</a></td>
+                <td>{% if seguimientoEstudiante.fecha %}{{ seguimientoEstudiante.fecha|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ seguimientoEstudiante.adicionalesPeriodo }}</td>
+                <td>{{ seguimientoEstudiante.resultados }}</td>
+                <td>{{ seguimientoEstudiante.observaciones }}</td>
+                <td>{% if seguimientoEstudiante.fechaReingreso %}{{ seguimientoEstudiante.fechaReingreso|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if seguimientoEstudiante.fechaEgreso %}{{ seguimientoEstudiante.fechaEgreso|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ seguimientoEstudiante.causaEgreso }}</td>
+                <td>{{ seguimientoEstudiante.descripcion }}</td>
+                <td>{{ seguimientoEstudiante.idSeguimiento }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('seguimientoestudiante_show', { 'idSeguimiento': seguimientoEstudiante.idSeguimiento }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('seguimientoestudiante_edit', { 'idSeguimiento': seguimientoEstudiante.idSeguimiento }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('seguimientoestudiante_new') }}">Create a new seguimientoEstudiante</a>
+        </li>
+    </ul>
+{% endblock %}

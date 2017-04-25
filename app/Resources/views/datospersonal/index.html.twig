@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Datospersonals list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Cargo</th>
+                <th>Tipo</th>
+                <th>Ciclo</th>
+                <th>Estado</th>
+                <th>Fechaingresoinstitucion</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Direccion</th>
+                <th>Iddatospersonal</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for datosPersonal in datosPersonals %}
+            <tr>
+                <td><a href="{{ path('datospersonal_show', { 'idDatosPersonal': datosPersonal.idDatosPersonal }) }}">{{ datosPersonal.nombres }}</a></td>
+                <td>{{ datosPersonal.apellidos }}</td>
+                <td>{{ datosPersonal.cedula }}</td>
+                <td>{{ datosPersonal.cargo }}</td>
+                <td>{{ datosPersonal.tipo }}</td>
+                <td>{{ datosPersonal.ciclo }}</td>
+                <td>{{ datosPersonal.estado }}</td>
+                <td>{{ datosPersonal.fechaIngresoInstitucion }}</td>
+                <td>{{ datosPersonal.telefono }}</td>
+                <td>{{ datosPersonal.email }}</td>
+                <td>{{ datosPersonal.direccion }}</td>
+                <td>{{ datosPersonal.idDatosPersonal }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('datospersonal_show', { 'idDatosPersonal': datosPersonal.idDatosPersonal }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('datospersonal_edit', { 'idDatosPersonal': datosPersonal.idDatosPersonal }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('datospersonal_new') }}">Create a new datosPersonal</a>
+        </li>
+    </ul>
+{% endblock %}

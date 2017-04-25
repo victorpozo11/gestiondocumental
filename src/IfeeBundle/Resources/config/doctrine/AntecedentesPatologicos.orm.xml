@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\AntecedentesPatologicos" table="antecedentes_patologicos">
+    <id name="idAntecedentesPatologicos" type="integer" column="ID_ANTECEDENTES_PATOLOGICOS">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="oidoSupuracion" type="text" column="OIDO_SUPURACION" length="65535" nullable="true"/>
+    <field name="oidoOperaciones" type="text" column="OIDO_OPERACIONES" length="65535" nullable="true"/>
+    <field name="oidoMareo" type="text" column="OIDO_MAREO" length="65535" nullable="true"/>
+    <field name="narizObstruccion" type="text" column="NARIZ_OBSTRUCCION" length="65535" nullable="true"/>
+    <field name="narizTraumatismo" type="text" column="NARIZ_TRAUMATISMO" length="65535" nullable="true"/>
+    <field name="bocaAnomaliaPaladar" type="text" column="BOCA_ANOMALIA_PALADAR" length="65535" nullable="true"/>
+    <field name="bocaOperaciones" type="text" column="BOCA_OPERACIONES" length="65535" nullable="true"/>
+    <field name="bocaDentadura" type="text" column="BOCA_DENTADURA" length="65535" nullable="true"/>
+    <field name="laringeInfecciones" type="text" column="LARINGE_INFECCIONES" length="65535" nullable="true"/>
+    <field name="laringeOperaciones" type="text" column="LARINGE_OPERACIONES" length="65535" nullable="true"/>
+    <field name="faringeInflamaciones" type="text" column="FARINGE_INFLAMACIONES" length="65535" nullable="true"/>
+    <field name="faringeTumores" type="text" column="FARINGE_TUMORES" length="65535" nullable="true"/>
+    <field name="feringeOperaciones" type="text" column="FERINGE_OPERACIONES" length="65535" nullable="true"/>
+    <field name="alimentacion" type="text" column="ALIMENTACION" length="65535" nullable="true"/>
+    <field name="deglucion" type="text" column="DEGLUCION" length="65535" nullable="true"/>
+    <field name="otro" type="text" column="OTRO" length="65535" nullable="true"/>
+    <field name="tractoRespiratiorioInferior" type="text" column="TRACTO_RESPIRATIORIO_INFERIOR" length="65535" nullable="true"/>
+    <field name="convulsiones" type="text" column="CONVULSIONES" length="65535" nullable="true"/>
+    <field name="examenesYTratamientosAnteriores" type="text" column="EXAMENES_Y_TRATAMIENTOS_ANTERIORES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

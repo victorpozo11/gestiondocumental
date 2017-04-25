@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Viviendas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tenencia</th>
+                <th>Tipovivienda</th>
+                <th>Numeropisos</th>
+                <th>Materialconstruccion</th>
+                <th>Descripcionvivienda</th>
+                <th>Numerototalcuartos</th>
+                <th>Domitorios</th>
+                <th>Sala</th>
+                <th>Comedor</th>
+                <th>Cocina</th>
+                <th>Banio</th>
+                <th>Tipobanio</th>
+                <th>Numerocamas</th>
+                <th>Hacinamiento</th>
+                <th>Descripcioncapacidadvivienda</th>
+                <th>Vehiculopropio</th>
+                <th>Descripcionvehiculo</th>
+                <th>Tiposervicioagua</th>
+                <th>Descripcionotroservicioagua</th>
+                <th>Tipopiso</th>
+                <th>Descripcionotropiso</th>
+                <th>Tipotecho</th>
+                <th>Descripcionotrotecho</th>
+                <th>Tipoluzelectrica</th>
+                <th>Alcantarillado</th>
+                <th>Usatelefono</th>
+                <th>Tvcable</th>
+                <th>Internet</th>
+                <th>Observaciones</th>
+                <th>Idvivienda</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vivienda in viviendas %}
+            <tr>
+                <td><a href="{{ path('vivienda_show', { 'idVivienda': vivienda.idVivienda }) }}">{{ vivienda.tenencia }}</a></td>
+                <td>{{ vivienda.tipoVivienda }}</td>
+                <td>{{ vivienda.numeroPisos }}</td>
+                <td>{{ vivienda.materialConstruccion }}</td>
+                <td>{{ vivienda.descripcionVivienda }}</td>
+                <td>{{ vivienda.numeroTotalCuartos }}</td>
+                <td>{% if vivienda.domitorios %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.sala %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.comedor %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.cocina %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.banio %}Yes{% else %}No{% endif %}</td>
+                <td>{{ vivienda.tipoBanio }}</td>
+                <td>{{ vivienda.numeroCamas }}</td>
+                <td>{% if vivienda.hacinamiento %}Yes{% else %}No{% endif %}</td>
+                <td>{{ vivienda.descripcionCapacidadVivienda }}</td>
+                <td>{% if vivienda.vehiculoPropio %}Yes{% else %}No{% endif %}</td>
+                <td>{{ vivienda.descripcionVehiculo }}</td>
+                <td>{{ vivienda.tipoServicioAgua }}</td>
+                <td>{{ vivienda.descripcionOtroServicioAgua }}</td>
+                <td>{{ vivienda.tipoPiso }}</td>
+                <td>{{ vivienda.descripcionOtroPiso }}</td>
+                <td>{{ vivienda.tipoTecho }}</td>
+                <td>{{ vivienda.descripcionOtroTecho }}</td>
+                <td>{{ vivienda.tipoLuzElectrica }}</td>
+                <td>{% if vivienda.alcantarillado %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.usaTelefono %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.tvcable %}Yes{% else %}No{% endif %}</td>
+                <td>{% if vivienda.internet %}Yes{% else %}No{% endif %}</td>
+                <td>{{ vivienda.observaciones }}</td>
+                <td>{{ vivienda.idVivienda }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('vivienda_show', { 'idVivienda': vivienda.idVivienda }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('vivienda_edit', { 'idVivienda': vivienda.idVivienda }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vivienda_new') }}">Create a new vivienda</a>
+        </li>
+    </ul>
+{% endblock %}

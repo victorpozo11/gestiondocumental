@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Aprendizajebasico</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Actividad</th>
+                <td>{{ aprendizajeBasico.actividad }}</td>
+            </tr>
+            <tr>
+                <th>Edadlogro</th>
+                <td>{{ aprendizajeBasico.edadLogro }}</td>
+            </tr>
+            <tr>
+                <th>Logro</th>
+                <td>{% if aprendizajeBasico.logro %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ aprendizajeBasico.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Idaprendizaje</th>
+                <td>{{ aprendizajeBasico.idAprendizaje }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('aprendizajebasico_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('aprendizajebasico_edit', { 'idAprendizaje': aprendizajeBasico.idAprendizaje }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

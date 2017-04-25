@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\TrazaUser" table="traza_user">
+    <id name="idTraza" type="integer" column="ID_TRAZA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fechaCreacion" type="date" column="FECHA_CREACION" nullable="true"/>
+    <field name="accion" type="text" column="ACCION" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

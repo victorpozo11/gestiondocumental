@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Antecedentespatologico</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Oidosupuracion</th>
+                <td>{{ antecedentesPatologico.oidoSupuracion }}</td>
+            </tr>
+            <tr>
+                <th>Oidooperaciones</th>
+                <td>{{ antecedentesPatologico.oidoOperaciones }}</td>
+            </tr>
+            <tr>
+                <th>Oidomareo</th>
+                <td>{{ antecedentesPatologico.oidoMareo }}</td>
+            </tr>
+            <tr>
+                <th>Narizobstruccion</th>
+                <td>{{ antecedentesPatologico.narizObstruccion }}</td>
+            </tr>
+            <tr>
+                <th>Nariztraumatismo</th>
+                <td>{{ antecedentesPatologico.narizTraumatismo }}</td>
+            </tr>
+            <tr>
+                <th>Bocaanomaliapaladar</th>
+                <td>{{ antecedentesPatologico.bocaAnomaliaPaladar }}</td>
+            </tr>
+            <tr>
+                <th>Bocaoperaciones</th>
+                <td>{{ antecedentesPatologico.bocaOperaciones }}</td>
+            </tr>
+            <tr>
+                <th>Bocadentadura</th>
+                <td>{{ antecedentesPatologico.bocaDentadura }}</td>
+            </tr>
+            <tr>
+                <th>Laringeinfecciones</th>
+                <td>{{ antecedentesPatologico.laringeInfecciones }}</td>
+            </tr>
+            <tr>
+                <th>Laringeoperaciones</th>
+                <td>{{ antecedentesPatologico.laringeOperaciones }}</td>
+            </tr>
+            <tr>
+                <th>Faringeinflamaciones</th>
+                <td>{{ antecedentesPatologico.faringeInflamaciones }}</td>
+            </tr>
+            <tr>
+                <th>Faringetumores</th>
+                <td>{{ antecedentesPatologico.faringeTumores }}</td>
+            </tr>
+            <tr>
+                <th>Feringeoperaciones</th>
+                <td>{{ antecedentesPatologico.feringeOperaciones }}</td>
+            </tr>
+            <tr>
+                <th>Alimentacion</th>
+                <td>{{ antecedentesPatologico.alimentacion }}</td>
+            </tr>
+            <tr>
+                <th>Deglucion</th>
+                <td>{{ antecedentesPatologico.deglucion }}</td>
+            </tr>
+            <tr>
+                <th>Otro</th>
+                <td>{{ antecedentesPatologico.otro }}</td>
+            </tr>
+            <tr>
+                <th>Tractorespiratiorioinferior</th>
+                <td>{{ antecedentesPatologico.tractoRespiratiorioInferior }}</td>
+            </tr>
+            <tr>
+                <th>Convulsiones</th>
+                <td>{{ antecedentesPatologico.convulsiones }}</td>
+            </tr>
+            <tr>
+                <th>Examenesytratamientosanteriores</th>
+                <td>{{ antecedentesPatologico.examenesYTratamientosAnteriores }}</td>
+            </tr>
+            <tr>
+                <th>Idantecedentespatologicos</th>
+                <td>{{ antecedentesPatologico.idAntecedentesPatologicos }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('antecedentespatologicos_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('antecedentespatologicos_edit', { 'idAntecedentesPatologicos': antecedentesPatologico.idAntecedentesPatologicos }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

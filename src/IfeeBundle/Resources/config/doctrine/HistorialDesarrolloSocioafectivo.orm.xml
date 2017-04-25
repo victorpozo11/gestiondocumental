@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\HistorialDesarrolloSocioafectivo" table="historial_desarrollo_socioafectivo">
+    <id name="idPsicologia2" type="integer" column="ID_PSICOLOGIA2">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="prenatalEdadMaternaEmbarazo" type="integer" column="PRENATAL_EDAD_MATERNA_EMBARAZO" nullable="true"/>
+    <field name="prenatalNumeroEmbarazos" type="integer" column="PRENATAL_NUMERO_EMBARAZOS" nullable="true"/>
+    <field name="prenatalAbortos" type="integer" column="PRENATAL_ABORTOS" nullable="true"/>
+    <field name="prenatalNumeroHijos" type="integer" column="PRENATAL_NUMERO_HIJOS" nullable="true"/>
+    <field name="prenatalControlesEmbarazo" type="boolean" column="PRENATAL_CONTROLES_EMBARAZO" nullable="true"/>
+    <field name="prenatalNumeroLugarHijo" type="integer" column="PRENATAL_NUMERO_LUGAR_HIJO" nullable="true"/>
+    <field name="prenatalInfeccionVaginal" type="boolean" column="PRENATAL_INFECCION_VAGINAL" nullable="true"/>
+    <field name="prenatalCaidas" type="boolean" column="PRENATAL_CAIDAS" nullable="true"/>
+    <field name="prenatalAmenazaAborto" type="boolean" column="PRENATAL_AMENAZA_ABORTO" nullable="true"/>
+    <field name="prenatalRayosx" type="boolean" column="PRENATAL_RAYOSX" nullable="true"/>
+    <field name="prenatalMedicamentos" type="text" column="PRENATAL_MEDICAMENTOS" length="65535" nullable="true"/>
+    <field name="prenatalAlcohol" type="boolean" column="PRENATAL_ALCOHOL" nullable="true"/>
+    <field name="prenatalTabaco" type="boolean" column="PRENATAL_TABACO" nullable="true"/>
+    <field name="prenatalDrogas" type="boolean" column="PRENATAL_DROGAS" nullable="true"/>
+    <field name="prenatalOtrosEstimulante" type="text" column="PRENATAL_OTROS_ESTIMULANTE" length="65535" nullable="true"/>
+    <field name="prenatalEstadoEmocionalEmbarazo" type="text" column="PRENATAL_ESTADO_EMOCIONAL_EMBARAZO" length="65535" nullable="true"/>
+    <field name="prenatalAlimentacionEmbarazo" type="text" column="PRENATAL_ALIMENTACION_EMBARAZO" length="65535" nullable="true"/>
+    <field name="prenatalEmbarazoPlanificado" type="boolean" column="PRENATAL_EMBARAZO_PLANIFICADO" nullable="true"/>
+    <field name="prenatalEdadGestacional" type="integer" column="PRENATAL_EDAD_GESTACIONAL" nullable="true"/>
+    <field name="prenatalTipoParto" type="text" column="PRENATAL_TIPO_PARTO" length="65535" nullable="true"/>
+    <field name="prenatalCordonUmbilicalCuello" type="boolean" column="PRENATAL_CORDON_UMBILICAL_CUELLO" nullable="true"/>
+    <field name="postnatalColor" type="text" column="POSTNATAL_COLOR" length="65535" nullable="true"/>
+    <field name="postnatalLlanto" type="text" column="POSTNATAL_LLANTO" length="65535" nullable="true"/>
+    <field name="postnatalCuidadosEspeciales" type="boolean" column="POSTNATAL_CUIDADOS_ESPECIALES" nullable="true"/>
+    <field name="postnatalTiempo" type="integer" column="POSTNATAL_TIEMPO" nullable="true"/>
+    <field name="postnatalHospitalizaciones" type="boolean" column="POSTNATAL_HOSPITALIZACIONES" nullable="true"/>
+    <field name="postnatalCirugias" type="text" column="POSTNATAL_CIRUGIAS" length="65535" nullable="true"/>
+    <field name="postnatalAnomalias" type="boolean" column="POSTNATAL_ANOMALIAS" nullable="true"/>
+    <field name="postnatalDescripcionAnomalias" type="text" column="POSTNATAL_DESCRIPCION_ANOMALIAS" length="65535" nullable="true"/>
+    <field name="postnatalAccidentes" type="text" column="POSTNATAL_ACCIDENTES" length="65535" nullable="true"/>
+    <field name="postnatalPeso" type="text" column="POSTNATAL_PESO" length="65535" nullable="true"/>
+    <field name="postnatalTalla" type="text" column="POSTNATAL_TALLA" length="65535" nullable="true"/>
+    <field name="actividadesVidaDiariaAlimentacionActual" type="text" column="ACTIVIDADES_VIDA_DIARIA_ALIMENTACION_ACTUAL" length="65535" nullable="true"/>
+    <field name="actividadesVidaDiariaSuenio" type="text" column="ACTIVIDADES_VIDA_DIARIA_SUENIO" length="65535" nullable="true"/>
+    <field name="esfinteresObservacion" type="text" column="ESFINTERES_OBSERVACION" length="65535" nullable="true"/>
+    <field name="vestidoObservacion" type="text" column="VESTIDO_OBSERVACION" length="65535" nullable="true"/>
+    <field name="relacionPadre" type="text" column="RELACION_PADRE" length="65535" nullable="true"/>
+    <field name="relacionMadre" type="text" column="RELACION_MADRE" length="65535" nullable="true"/>
+    <field name="relacionHermanos" type="text" column="RELACION_HERMANOS" length="65535" nullable="true"/>
+    <field name="relacionLudica" type="text" column="RELACION_LUDICA" length="65535" nullable="true"/>
+    <field name="metodosDisciplinaDescripcion" type="text" column="METODOS_DISCIPLINA_DESCRIPCION" length="65535" nullable="true"/>
+    <field name="educacionExpectativaIngreso" type="text" column="EDUCACION_EXPECTATIVA_INGRESO" length="65535" nullable="true"/>
+    <field name="adicionalesMetodoAnticonceptivo" type="text" column="ADICIONALES_METODO_ANTICONCEPTIVO" length="65535" nullable="true"/>
+    <field name="adicionalesBono" type="boolean" column="ADICIONALES_BONO" nullable="true"/>
+    <field name="adicionalesBonoDescripcion" type="text" column="ADICIONALES_BONO_DESCRIPCION" length="65535" nullable="true"/>
+    <field name="adicionalesEdadMental" type="integer" column="ADICIONALES_EDAD_MENTAL" nullable="true"/>
+    <field name="adicionalesEdadFisica" type="integer" column="ADICIONALES_EDAD_FISICA" nullable="true"/>
+    <field name="adicionalesPeriodo" type="text" column="ADICIONALES_PERIODO" length="65535" nullable="true"/>
+    <field name="relacionAmigos" type="text" column="RELACION_AMIGOS" length="65535" nullable="true"/>
+    <field name="metodosDisciplinaPega" type="boolean" column="METODOS_DISCIPLINA_PEGA" nullable="true"/>
+    <field name="metodosDisciplinaRegania" type="boolean" column="METODOS_DISCIPLINA_REGANIA" nullable="true"/>
+    <field name="metodosDisciplinaRazona" type="boolean" column="METODOS_DISCIPLINA_RAZONA" nullable="true"/>
+    <field name="metodosDisciplinaAmenaza" type="boolean" column="METODOS_DISCIPLINA_AMENAZA" nullable="true"/>
+    <field name="metodosDisciplinaIgnora" type="boolean" column="METODOS_DISCIPLINA_IGNORA" nullable="true"/>
+    <field name="metodosDisciplinaRetiraObjeto" type="boolean" column="METODOS_DISCIPLINA_RETIRA_OBJETO" nullable="true"/>
+    <field name="metodosDisciplinaNinguna" type="boolean" column="METODOS_DISCIPLINA_NINGUNA" nullable="true"/>
+    <field name="metodosDisciplinaOtra" type="boolean" column="METODOS_DISCIPLINA_OTRA" nullable="true"/>
+    <field name="metodosDisciplinaDescripcionOtra" type="text" column="METODOS_DISCIPLINA_DESCRIPCION_OTRA" length="65535" nullable="true"/>
+    <field name="buenComportamientoElogios" type="boolean" column="BUEN_COMPORTAMIENTO_ELOGIOS" nullable="true"/>
+    <field name="buenComportamientoRegalos" type="boolean" column="BUEN_COMPORTAMIENTO_REGALOS" nullable="true"/>
+    <field name="buenComportamientoCaricias" type="boolean" column="BUEN_COMPORTAMIENTO_CARICIAS" nullable="true"/>
+    <field name="buenComportamientoNingunPremio" type="boolean" column="BUEN_COMPORTAMIENTO_NINGUN_PREMIO" nullable="true"/>
+    <field name="buenComportamientoComida" type="boolean" column="BUEN_COMPORTAMIENTO_COMIDA" nullable="true"/>
+    <field name="buenComportamientoObjetos" type="boolean" column="BUEN_COMPORTAMIENTO_OBJETOS" nullable="true"/>
+    <field name="buenComportamientoHaceLoQueLeGusta" type="boolean" column="BUEN_COMPORTAMIENTO_HACE_LO_QUE_LE_GUSTA" nullable="true"/>
+    <field name="riesgoFamiliarPlanificacionFamiliar" type="boolean" column="RIESGO_FAMILIAR_PLANIFICACION_FAMILIAR" nullable="true"/>
+    <field name="riesgoFamiliarCualPlanificacionFamiliar" type="text" column="RIESGO_FAMILIAR_CUAL_PLANIFICACION_FAMILIAR" length="65535" nullable="true"/>
+    <field name="riesgoFamiliarComunicacionPareja" type="text" column="RIESGO_FAMILIAR_COMUNICACION_PAREJA" length="65535" nullable="true"/>
+    <field name="riesgoFamiliarResponsableDespuesEscuela" type="text" column="RIESGO_FAMILIAR_RESPONSABLE_DESPUES_ESCUELA" length="65535" nullable="true"/>
+    <field name="maltratoFisico" type="boolean" column="MALTRATO_FISICO" nullable="true"/>
+    <field name="maltratoPsicologico" type="boolean" column="MALTRATO_PSICOLOGICO" nullable="true"/>
+    <field name="maltratoSexual" type="boolean" column="MALTRATO_SEXUAL" nullable="true"/>
+    <field name="maltratoMachismo" type="boolean" column="MALTRATO_MACHISMO" nullable="true"/>
+    <field name="maltratoViolenciaIntrafamiliar" type="boolean" column="MALTRATO_VIOLENCIA_INTRAFAMILIAR" nullable="true"/>
+    <field name="situacionLegal" type="text" column="SITUACION_LEGAL" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

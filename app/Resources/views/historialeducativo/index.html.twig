@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Historialeducativos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nivel</th>
+                <th>Cumple</th>
+                <th>Lugar</th>
+                <th>Edaddesde</th>
+                <th>Edadhasta</th>
+                <th>Observaciones</th>
+                <th>Idhistorial</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for historialEducativo in historialEducativos %}
+            <tr>
+                <td><a href="{{ path('historialeducativo_show', { 'idHistorial': historialEducativo.idHistorial }) }}">{{ historialEducativo.nivel }}</a></td>
+                <td>{% if historialEducativo.cumple %}Yes{% else %}No{% endif %}</td>
+                <td>{{ historialEducativo.lugar }}</td>
+                <td>{{ historialEducativo.edadDesde }}</td>
+                <td>{{ historialEducativo.edadHasta }}</td>
+                <td>{{ historialEducativo.observaciones }}</td>
+                <td>{{ historialEducativo.idHistorial }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('historialeducativo_show', { 'idHistorial': historialEducativo.idHistorial }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('historialeducativo_edit', { 'idHistorial': historialEducativo.idHistorial }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('historialeducativo_new') }}">Create a new historialEducativo</a>
+        </li>
+    </ul>
+{% endblock %}

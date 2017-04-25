@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Role</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Motorgiros</th>
+                <td>{{ role.motorGiros }}</td>
+            </tr>
+            <tr>
+                <th>Rol</th>
+                <td>{{ role.rol }}</td>
+            </tr>
+            <tr>
+                <th>Idrole</th>
+                <td>{{ role.idRole }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('role_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('role_edit', { 'idRole': role.idRole }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

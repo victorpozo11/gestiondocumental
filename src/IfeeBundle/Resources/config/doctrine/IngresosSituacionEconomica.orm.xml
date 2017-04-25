@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\IngresosSituacionEconomica" table="ingresos_situacion_economica">
+    <id name="idIngresos" type="integer" column="ID_INGRESOS">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="descripcionAportante" type="text" column="DESCRIPCION_APORTANTE" length="65535" nullable="true"/>
+    <field name="montoIngreso" type="decimal" column="MONTO_INGRESO" precision="8" scale="2" nullable="true"/>
+    <field name="observaciones" type="text" column="OBSERVACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

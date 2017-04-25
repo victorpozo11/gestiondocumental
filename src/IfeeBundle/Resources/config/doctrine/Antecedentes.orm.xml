@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Antecedentes" table="antecedentes">
+    <id name="idAntecedentes" type="integer" column="ID_ANTECEDENTES">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="pariente" type="text" column="PARIENTE" length="65535" nullable="true"/>
+    <field name="descripcion" type="text" column="DESCRIPCION" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

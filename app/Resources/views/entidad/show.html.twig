@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Entidad</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Razonsocial</th>
+                <td>{{ entidad.razonSocial }}</td>
+            </tr>
+            <tr>
+                <th>Nombrecorto</th>
+                <td>{{ entidad.nombreCorto }}</td>
+            </tr>
+            <tr>
+                <th>Direccion</th>
+                <td>{{ entidad.direccion }}</td>
+            </tr>
+            <tr>
+                <th>Telefono</th>
+                <td>{{ entidad.telefono }}</td>
+            </tr>
+            <tr>
+                <th>Correo</th>
+                <td>{{ entidad.correo }}</td>
+            </tr>
+            <tr>
+                <th>Ruc</th>
+                <td>{{ entidad.ruc }}</td>
+            </tr>
+            <tr>
+                <th>Fechacreacion</th>
+                <td>{% if entidad.fechaCreacion %}{{ entidad.fechaCreacion|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ entidad.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Rutalogo</th>
+                <td>{{ entidad.rutaLogo }}</td>
+            </tr>
+            <tr>
+                <th>Identidad</th>
+                <td>{{ entidad.idEntidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('entidad_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('entidad_edit', { 'idEntidad': entidad.idEntidad }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

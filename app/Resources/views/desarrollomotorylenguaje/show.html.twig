@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Desarrollomotorylenguaje</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Motorsostencefalico</th>
+                <td>{{ desarrolloMotorYLenguaje.motorSostenCefalico }}</td>
+            </tr>
+            <tr>
+                <th>Motorgiros</th>
+                <td>{{ desarrolloMotorYLenguaje.motorGiros }}</td>
+            </tr>
+            <tr>
+                <th>Motorposicionsentada</th>
+                <td>{{ desarrolloMotorYLenguaje.motorPosicionSentada }}</td>
+            </tr>
+            <tr>
+                <th>Motorgateo</th>
+                <td>{{ desarrolloMotorYLenguaje.motorGateo }}</td>
+            </tr>
+            <tr>
+                <th>Motorbepedestacion</th>
+                <td>{{ desarrolloMotorYLenguaje.motorBepedestacion }}</td>
+            </tr>
+            <tr>
+                <th>Motormarcha</th>
+                <td>{{ desarrolloMotorYLenguaje.motorMarcha }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajesonrisasocial</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeSonrisaSocial }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajebalbuceo</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeBalbuceo }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajefrases</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeFrases }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajecomunicaactualmente</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeComunicaActualmente }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajegorgeo</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeGorgeo }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajeprimerapalabra</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajePrimeraPalabra }}</td>
+            </tr>
+            <tr>
+                <th>Lenguajeoraciones</th>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeOraciones }}</td>
+            </tr>
+            <tr>
+                <th>Iddesarrollomotor</th>
+                <td>{{ desarrolloMotorYLenguaje.idDesarrolloMotor }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('desarrollomotorylenguaje_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('desarrollomotorylenguaje_edit', { 'idDesarrolloMotor': desarrolloMotorYLenguaje.idDesarrolloMotor }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

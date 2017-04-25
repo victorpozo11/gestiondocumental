@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Trazauser</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Fechacreacion</th>
+                <td>{% if trazaUser.fechaCreacion %}{{ trazaUser.fechaCreacion|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Accion</th>
+                <td>{{ trazaUser.accion }}</td>
+            </tr>
+            <tr>
+                <th>Idtraza</th>
+                <td>{{ trazaUser.idTraza }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('trazauser_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('trazauser_edit', { 'idTraza': trazaUser.idTraza }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

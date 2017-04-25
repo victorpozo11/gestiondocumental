@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Fichalogopedicas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Motivoconsulta</th>
+                <th>Caracteristicavoz</th>
+                <th>Caracteristicarespiracion</th>
+                <th>Despitajeaudicion</th>
+                <th>Impresiondiagnostica</th>
+                <th>Observaciones</th>
+                <th>Recomendaciones</th>
+                <th>Idlogopedica</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for fichaLogopedica in fichaLogopedicas %}
+            <tr>
+                <td><a href="{{ path('fichalogopedica_show', { 'idLogopedica': fichaLogopedica.idLogopedica }) }}">{{ fichaLogopedica.motivoConsulta }}</a></td>
+                <td>{{ fichaLogopedica.caracteristicaVoz }}</td>
+                <td>{{ fichaLogopedica.caracteristicaRespiracion }}</td>
+                <td>{{ fichaLogopedica.despitajeAudicion }}</td>
+                <td>{{ fichaLogopedica.impresionDiagnostica }}</td>
+                <td>{{ fichaLogopedica.observaciones }}</td>
+                <td>{{ fichaLogopedica.recomendaciones }}</td>
+                <td>{{ fichaLogopedica.idLogopedica }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('fichalogopedica_show', { 'idLogopedica': fichaLogopedica.idLogopedica }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('fichalogopedica_edit', { 'idLogopedica': fichaLogopedica.idLogopedica }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('fichalogopedica_new') }}">Create a new fichaLogopedica</a>
+        </li>
+    </ul>
+{% endblock %}

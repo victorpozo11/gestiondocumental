@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\ConsultaMedica" table="consulta_medica">
+    <id name="idConsulta" type="integer" column="ID_CONSULTA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fecha" type="date" column="FECHA" nullable="true"/>
+    <field name="motivoConsulta" type="text" column="MOTIVO_CONSULTA" length="65535" nullable="true"/>
+    <field name="diagnosticoMedico" type="text" column="DIAGNOSTICO_MEDICO" length="65535" nullable="true"/>
+    <field name="prenatalMedicamentos" type="text" column="PRENATAL_MEDICAMENTOS" length="65535" nullable="true"/>
+    <field name="dosis" type="text" column="DOSIS" length="65535" nullable="true"/>
+    <field name="problematicaActual" type="text" column="PROBLEMATICA_ACTUAL" length="65535" nullable="true"/>
+    <field name="protesis" type="text" column="PROTESIS" length="65535" nullable="true"/>
+    <field name="alergias" type="text" column="ALERGIAS" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

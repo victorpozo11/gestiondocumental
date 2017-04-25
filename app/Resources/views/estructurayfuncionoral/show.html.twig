@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Estructurayfuncionoral</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Lenguatamanio</th>
+                <td>{{ estructuraYFuncionOral.lenguaTamanio }}</td>
+            </tr>
+            <tr>
+                <th>Lenguaprotrucionrecta</th>
+                <td>{{ estructuraYFuncionOral.lenguaProtrucionRecta }}</td>
+            </tr>
+            <tr>
+                <th>Langualateralizacionizq</th>
+                <td>{{ estructuraYFuncionOral.languaLateralizacionIzq }}</td>
+            </tr>
+            <tr>
+                <th>Lengualateralizacionder</th>
+                <td>{{ estructuraYFuncionOral.lenguaLateralizacionDer }}</td>
+            </tr>
+            <tr>
+                <th>Lenguaelevaciondientessuperiores</th>
+                <td>{{ estructuraYFuncionOral.lenguaElevacionDientesSuperiores }}</td>
+            </tr>
+            <tr>
+                <th>Lenguamovalternossacarmeter</th>
+                <td>{{ estructuraYFuncionOral.lenguaMovAlternosSacarMeter }}</td>
+            </tr>
+            <tr>
+                <th>Lenguamovalternosproducirla</th>
+                <td>{{ estructuraYFuncionOral.lenguaMovAlternosProducirLa }}</td>
+            </tr>
+            <tr>
+                <th>Lenguamovalternosproducirka</th>
+                <td>{{ estructuraYFuncionOral.lenguaMovAlternosProducirKa }}</td>
+            </tr>
+            <tr>
+                <th>Lenguamovalternosvibrar</th>
+                <td>{{ estructuraYFuncionOral.lenguaMovAlternosVibrar }}</td>
+            </tr>
+            <tr>
+                <th>Lenguaacanalarla</th>
+                <td>{{ estructuraYFuncionOral.lenguaAcanalarla }}</td>
+            </tr>
+            <tr>
+                <th>Lenguatemblores</th>
+                <td>{{ estructuraYFuncionOral.lenguaTemblores }}</td>
+            </tr>
+            <tr>
+                <th>Lenguaobservaciones</th>
+                <td>{{ estructuraYFuncionOral.lenguaObservaciones }}</td>
+            </tr>
+            <tr>
+                <th>Labiossimetriaforma</th>
+                <td>{{ estructuraYFuncionOral.labiosSimetriaForma }}</td>
+            </tr>
+            <tr>
+                <th>Labiosprotucion</th>
+                <td>{{ estructuraYFuncionOral.labiosProtucion }}</td>
+            </tr>
+            <tr>
+                <th>Labiosretraccion</th>
+                <td>{{ estructuraYFuncionOral.labiosRetraccion }}</td>
+            </tr>
+            <tr>
+                <th>Labiosabrircerrarboca</th>
+                <td>{{ estructuraYFuncionOral.labiosAbrirCerrarBoca }}</td>
+            </tr>
+            <tr>
+                <th>Labiosapretarboca</th>
+                <td>{{ estructuraYFuncionOral.labiosApretarBoca }}</td>
+            </tr>
+            <tr>
+                <th>Labiosproduccion</th>
+                <td>{{ estructuraYFuncionOral.labiosProduccion }}</td>
+            </tr>
+            <tr>
+                <th>Labiosobservaciones</th>
+                <td>{{ estructuraYFuncionOral.labiosObservaciones }}</td>
+            </tr>
+            <tr>
+                <th>Paladarsimetriaforma</th>
+                <td>{{ estructuraYFuncionOral.paladarSimetriaForma }}</td>
+            </tr>
+            <tr>
+                <th>Paladaruvula</th>
+                <td>{{ estructuraYFuncionOral.paladarUvula }}</td>
+            </tr>
+            <tr>
+                <th>Paladarmovilidadvelo</th>
+                <td>{{ estructuraYFuncionOral.paladarMovilidadVelo }}</td>
+            </tr>
+            <tr>
+                <th>Paladarobservaciones</th>
+                <td>{{ estructuraYFuncionOral.paladarObservaciones }}</td>
+            </tr>
+            <tr>
+                <th>Dientesimplantacion</th>
+                <td>{{ estructuraYFuncionOral.dientesImplantacion }}</td>
+            </tr>
+            <tr>
+                <th>Dientesestados</th>
+                <td>{{ estructuraYFuncionOral.dientesEstados }}</td>
+            </tr>
+            <tr>
+                <th>Dientesoclusion</th>
+                <td>{{ estructuraYFuncionOral.dientesOclusion }}</td>
+            </tr>
+            <tr>
+                <th>Dientesdentaturapostiza</th>
+                <td>{{ estructuraYFuncionOral.dientesDentaturaPostiza }}</td>
+            </tr>
+            <tr>
+                <th>Dientesobservaciones</th>
+                <td>{{ estructuraYFuncionOral.dientesObservaciones }}</td>
+            </tr>
+            <tr>
+                <th>Movmaxilarder</th>
+                <td>{{ estructuraYFuncionOral.movMaxilarDer }}</td>
+            </tr>
+            <tr>
+                <th>Movmaxilarizq</th>
+                <td>{{ estructuraYFuncionOral.movMaxilarIzq }}</td>
+            </tr>
+            <tr>
+                <th>Movmaxilaradelante</th>
+                <td>{{ estructuraYFuncionOral.movMaxilarAdelante }}</td>
+            </tr>
+            <tr>
+                <th>Movmaxilarrotacion</th>
+                <td>{{ estructuraYFuncionOral.movMaxilarRotacion }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientedeglutirvoluntario</th>
+                <td>{% if estructuraYFuncionOral.reportePacienteDeglutirVoluntario %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientedeglutirinvoluntario</th>
+                <td>{% if estructuraYFuncionOral.reportePacienteDeglutirInvoluntario %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientemasticar</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteMasticar }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientecarraspear</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteCarraspear }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientecialorrea</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteCialorrea }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientereflejopaladar</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteReflejoPaladar }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacientedificultadmovorales</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteDificultadMovOrales }}</td>
+            </tr>
+            <tr>
+                <th>Reportepacienteobservaciones</th>
+                <td>{{ estructuraYFuncionOral.reportePacienteObservaciones }}</td>
+            </tr>
+            <tr>
+                <th>Idestructurayfuncionoral</th>
+                <td>{{ estructuraYFuncionOral.idEstructuraYFuncionOral }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('estructurayfuncionoral_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('estructurayfuncionoral_edit', { 'idEstructuraYFuncionOral': estructuraYFuncionOral.idEstructuraYFuncionOral }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

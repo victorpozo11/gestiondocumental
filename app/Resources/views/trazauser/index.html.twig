@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Trazausers list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Fechacreacion</th>
+                <th>Accion</th>
+                <th>Idtraza</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for trazaUser in trazaUsers %}
+            <tr>
+                <td><a href="{{ path('trazauser_show', { 'idTraza': trazaUser.idTraza }) }}">{{ trazaUser.fechaCreacion }}</a></td>
+                <td>{{ trazaUser.accion }}</td>
+                <td>{{ trazaUser.idTraza }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('trazauser_show', { 'idTraza': trazaUser.idTraza }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('trazauser_edit', { 'idTraza': trazaUser.idTraza }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('trazauser_new') }}">Create a new trazaUser</a>
+        </li>
+    </ul>
+{% endblock %}

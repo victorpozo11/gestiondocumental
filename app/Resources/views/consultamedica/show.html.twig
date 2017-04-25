@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Consultamedica</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Fecha</th>
+                <td>{% if consultaMedica.fecha %}{{ consultaMedica.fecha|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Motivoconsulta</th>
+                <td>{{ consultaMedica.motivoConsulta }}</td>
+            </tr>
+            <tr>
+                <th>Diagnosticomedico</th>
+                <td>{{ consultaMedica.diagnosticoMedico }}</td>
+            </tr>
+            <tr>
+                <th>Prenatalmedicamentos</th>
+                <td>{{ consultaMedica.prenatalMedicamentos }}</td>
+            </tr>
+            <tr>
+                <th>Dosis</th>
+                <td>{{ consultaMedica.dosis }}</td>
+            </tr>
+            <tr>
+                <th>Problematicaactual</th>
+                <td>{{ consultaMedica.problematicaActual }}</td>
+            </tr>
+            <tr>
+                <th>Protesis</th>
+                <td>{{ consultaMedica.protesis }}</td>
+            </tr>
+            <tr>
+                <th>Alergias</th>
+                <td>{{ consultaMedica.alergias }}</td>
+            </tr>
+            <tr>
+                <th>Idconsulta</th>
+                <td>{{ consultaMedica.idConsulta }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('consultamedica_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('consultamedica_edit', { 'idConsulta': consultaMedica.idConsulta }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

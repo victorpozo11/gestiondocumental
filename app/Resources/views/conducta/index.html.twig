@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Conductas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Caracteristica</th>
+                <th>Cumple</th>
+                <th>Idconducta</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for conductum in conductas %}
+            <tr>
+                <td><a href="{{ path('conducta_show', { 'idConducta': conductum.idConducta }) }}">{{ conductum.caracteristica }}</a></td>
+                <td>{% if conductum.cumple %}Yes{% else %}No{% endif %}</td>
+                <td>{{ conductum.idConducta }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('conducta_show', { 'idConducta': conductum.idConducta }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('conducta_edit', { 'idConducta': conductum.idConducta }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('conducta_new') }}">Create a new conductum</a>
+        </li>
+    </ul>
+{% endblock %}

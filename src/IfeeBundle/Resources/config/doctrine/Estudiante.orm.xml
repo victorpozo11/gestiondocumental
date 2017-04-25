@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Estudiante" table="estudiante">
+    <indexes>
+      <index name="FK_RELATIONSHIP_5" columns="ID_PARROQUIA"/>
+      <index name="FK_RELATIONSHIP_6" columns="ID_CIUDAD"/>
+      <index name="FK_RELATIONSHIP_7" columns="ID_PROVINCIA"/>
+      <index name="FK_RELATIONSHIP_8" columns="ID_REGION"/>
+      <index name="FK_RELATIONSHIP_9" columns="ID_PAIS"/>
+    </indexes>
+    <id name="idEstudiante" type="integer" column="ID_ESTUDIANTE">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombres" type="text" column="NOMBRES" length="65535" nullable="true"/>
+    <field name="apellidos" type="text" column="APELLIDOS" length="65535" nullable="true"/>
+    <field name="cedula" type="integer" column="CEDULA" nullable="true"/>
+    <field name="domicilio" type="string" column="DOMICILIO" length="256" nullable="true"/>
+    <field name="sector" type="string" column="SECTOR" length="100" nullable="true"/>
+    <field name="cambioDomicilio" type="string" column="CAMBIO_DOMICILIO" length="256" nullable="true"/>
+    <field name="usaTelefono" type="boolean" column="USA_TELEFONO" nullable="true"/>
+    <field name="edad" type="integer" column="EDAD" nullable="true"/>
+    <field name="fechaNacimiento" type="date" column="FECHA_NACIMIENTO" nullable="true"/>
+    <field name="rutaFoto" type="string" column="RUTA_FOTO" length="256" nullable="true"/>
+    <field name="riesgoFamiliarResponsableDespuesEscuela" type="text" column="RIESGO_FAMILIAR_RESPONSABLE_DESPUES_ESCUELA" length="65535" nullable="true"/>
+    <field name="numeroCarnetConadis" type="bigint" column="NUMERO_CARNET_CONADIS" nullable="true"/>
+    <field name="carnetConadis" type="boolean" column="CARNET_CONADIS" nullable="true"/>
+    <field name="porcentajeDiscapacidad" type="text" column="PORCENTAJE_DISCAPACIDAD" length="65535" nullable="true"/>
+    <field name="fechaIngresoIfee" type="date" column="FECHA_INGRESO_IFEE" nullable="true"/>
+    <field name="transporteLlegada" type="text" column="TRANSPORTE_LLEGADA" length="65535" nullable="true"/>
+    <field name="telefonoTransporte" type="integer" column="TELEFONO_TRANSPORTE" nullable="true"/>
+    <many-to-one field="idPais" target-entity="Pais">
+      <join-columns>
+        <join-column name="ID_PAIS" referenced-column-name="ID_PAIS"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idRegion" target-entity="Region">
+      <join-columns>
+        <join-column name="ID_REGION" referenced-column-name="ID_REGION"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idProvincia" target-entity="Provincia">
+      <join-columns>
+        <join-column name="ID_PROVINCIA" referenced-column-name="ID_PROVINCIA"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idCiudad" target-entity="Ciudad">
+      <join-columns>
+        <join-column name="ID_CIUDAD" referenced-column-name="ID_CIUDAD"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idParroquia" target-entity="Parroquia">
+      <join-columns>
+        <join-column name="ID_PARROQUIA" referenced-column-name="ID_PARROQUIA"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

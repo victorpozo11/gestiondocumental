@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Fichalogopedica</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Motivoconsulta</th>
+                <td>{{ fichaLogopedica.motivoConsulta }}</td>
+            </tr>
+            <tr>
+                <th>Caracteristicavoz</th>
+                <td>{{ fichaLogopedica.caracteristicaVoz }}</td>
+            </tr>
+            <tr>
+                <th>Caracteristicarespiracion</th>
+                <td>{{ fichaLogopedica.caracteristicaRespiracion }}</td>
+            </tr>
+            <tr>
+                <th>Despitajeaudicion</th>
+                <td>{{ fichaLogopedica.despitajeAudicion }}</td>
+            </tr>
+            <tr>
+                <th>Impresiondiagnostica</th>
+                <td>{{ fichaLogopedica.impresionDiagnostica }}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ fichaLogopedica.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Recomendaciones</th>
+                <td>{{ fichaLogopedica.recomendaciones }}</td>
+            </tr>
+            <tr>
+                <th>Idlogopedica</th>
+                <td>{{ fichaLogopedica.idLogopedica }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('fichalogopedica_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('fichalogopedica_edit', { 'idLogopedica': fichaLogopedica.idLogopedica }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

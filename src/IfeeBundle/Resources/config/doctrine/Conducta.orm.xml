@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Conducta" table="conducta">
+    <id name="idConducta" type="integer" column="ID_CONDUCTA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="caracteristica" type="text" column="CARACTERISTICA" length="65535" nullable="true"/>
+    <field name="cumple" type="boolean" column="CUMPLE" nullable="true"/>
+  </entity>
+</doctrine-mapping>

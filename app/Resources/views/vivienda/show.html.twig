@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vivienda</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Tenencia</th>
+                <td>{{ vivienda.tenencia }}</td>
+            </tr>
+            <tr>
+                <th>Tipovivienda</th>
+                <td>{{ vivienda.tipoVivienda }}</td>
+            </tr>
+            <tr>
+                <th>Numeropisos</th>
+                <td>{{ vivienda.numeroPisos }}</td>
+            </tr>
+            <tr>
+                <th>Materialconstruccion</th>
+                <td>{{ vivienda.materialConstruccion }}</td>
+            </tr>
+            <tr>
+                <th>Descripcionvivienda</th>
+                <td>{{ vivienda.descripcionVivienda }}</td>
+            </tr>
+            <tr>
+                <th>Numerototalcuartos</th>
+                <td>{{ vivienda.numeroTotalCuartos }}</td>
+            </tr>
+            <tr>
+                <th>Domitorios</th>
+                <td>{% if vivienda.domitorios %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Sala</th>
+                <td>{% if vivienda.sala %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Comedor</th>
+                <td>{% if vivienda.comedor %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Cocina</th>
+                <td>{% if vivienda.cocina %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Banio</th>
+                <td>{% if vivienda.banio %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Tipobanio</th>
+                <td>{{ vivienda.tipoBanio }}</td>
+            </tr>
+            <tr>
+                <th>Numerocamas</th>
+                <td>{{ vivienda.numeroCamas }}</td>
+            </tr>
+            <tr>
+                <th>Hacinamiento</th>
+                <td>{% if vivienda.hacinamiento %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Descripcioncapacidadvivienda</th>
+                <td>{{ vivienda.descripcionCapacidadVivienda }}</td>
+            </tr>
+            <tr>
+                <th>Vehiculopropio</th>
+                <td>{% if vivienda.vehiculoPropio %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Descripcionvehiculo</th>
+                <td>{{ vivienda.descripcionVehiculo }}</td>
+            </tr>
+            <tr>
+                <th>Tiposervicioagua</th>
+                <td>{{ vivienda.tipoServicioAgua }}</td>
+            </tr>
+            <tr>
+                <th>Descripcionotroservicioagua</th>
+                <td>{{ vivienda.descripcionOtroServicioAgua }}</td>
+            </tr>
+            <tr>
+                <th>Tipopiso</th>
+                <td>{{ vivienda.tipoPiso }}</td>
+            </tr>
+            <tr>
+                <th>Descripcionotropiso</th>
+                <td>{{ vivienda.descripcionOtroPiso }}</td>
+            </tr>
+            <tr>
+                <th>Tipotecho</th>
+                <td>{{ vivienda.tipoTecho }}</td>
+            </tr>
+            <tr>
+                <th>Descripcionotrotecho</th>
+                <td>{{ vivienda.descripcionOtroTecho }}</td>
+            </tr>
+            <tr>
+                <th>Tipoluzelectrica</th>
+                <td>{{ vivienda.tipoLuzElectrica }}</td>
+            </tr>
+            <tr>
+                <th>Alcantarillado</th>
+                <td>{% if vivienda.alcantarillado %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Usatelefono</th>
+                <td>{% if vivienda.usaTelefono %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Tvcable</th>
+                <td>{% if vivienda.tvcable %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Internet</th>
+                <td>{% if vivienda.internet %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Observaciones</th>
+                <td>{{ vivienda.observaciones }}</td>
+            </tr>
+            <tr>
+                <th>Idvivienda</th>
+                <td>{{ vivienda.idVivienda }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vivienda_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('vivienda_edit', { 'idVivienda': vivienda.idVivienda }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

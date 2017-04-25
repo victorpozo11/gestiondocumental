@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\InformacionSalud" table="informacion_salud">
+    <id name="idSalud" type="integer" column="ID_SALUD">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="enfermedadesGraves" type="text" column="ENFERMEDADES_GRAVES" length="65535" nullable="true"/>
+    <field name="postnatalAccidentes" type="text" column="POSTNATAL_ACCIDENTES" length="65535" nullable="true"/>
+    <field name="completoVacunas" type="boolean" column="COMPLETO_VACUNAS" nullable="true"/>
+    <field name="tomaMedicamentos" type="boolean" column="TOMA_MEDICAMENTOS" nullable="true"/>
+    <field name="vacunaFaltante" type="text" column="VACUNA_FALTANTE" length="65535" nullable="true"/>
+    <field name="desconoceTomaMedicamento" type="boolean" column="DESCONOCE_TOMA_MEDICAMENTO" nullable="true"/>
+    <field name="nombreMedicamento" type="text" column="NOMBRE_MEDICAMENTO" length="65535" nullable="true"/>
+    <field name="hospitalAtendido" type="text" column="HOSPITAL_ATENDIDO" length="65535" nullable="true"/>
+    <field name="medicoTratante" type="text" column="MEDICO_TRATANTE" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

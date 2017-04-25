@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Usuario</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Cedula</th>
+                <td>{{ usuario.cedula }}</td>
+            </tr>
+            <tr>
+                <th>Direccion</th>
+                <td>{{ usuario.direccion }}</td>
+            </tr>
+            <tr>
+                <th>Usatelefono</th>
+                <td>{% if usuario.usaTelefono %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ usuario.email }}</td>
+            </tr>
+            <tr>
+                <th>Usuario</th>
+                <td>{{ usuario.usuario }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ usuario.password }}</td>
+            </tr>
+            <tr>
+                <th>Salt</th>
+                <td>{{ usuario.salt }}</td>
+            </tr>
+            <tr>
+                <th>Isldap</th>
+                <td>{% if usuario.isldap %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Dientesestados</th>
+                <td>{{ usuario.dientesEstados }}</td>
+            </tr>
+            <tr>
+                <th>Fechaexpiracion</th>
+                <td>{% if usuario.fechaExpiracion %}{{ usuario.fechaExpiracion|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Rutafoto</th>
+                <td>{{ usuario.rutaFoto }}</td>
+            </tr>
+            <tr>
+                <th>Accion</th>
+                <td>{{ usuario.accion }}</td>
+            </tr>
+            <tr>
+                <th>Idusuario</th>
+                <td>{{ usuario.idUsuario }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('usuario_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('usuario_edit', { 'idUsuario': usuario.idUsuario }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

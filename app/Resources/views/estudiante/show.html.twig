@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Estudiante</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nombres</th>
+                <td>{{ estudiante.nombres }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ estudiante.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Cedula</th>
+                <td>{{ estudiante.cedula }}</td>
+            </tr>
+            <tr>
+                <th>Domicilio</th>
+                <td>{{ estudiante.domicilio }}</td>
+            </tr>
+            <tr>
+                <th>Sector</th>
+                <td>{{ estudiante.sector }}</td>
+            </tr>
+            <tr>
+                <th>Cambiodomicilio</th>
+                <td>{{ estudiante.cambioDomicilio }}</td>
+            </tr>
+            <tr>
+                <th>Usatelefono</th>
+                <td>{% if estudiante.usaTelefono %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ estudiante.edad }}</td>
+            </tr>
+            <tr>
+                <th>Fechanacimiento</th>
+                <td>{% if estudiante.fechaNacimiento %}{{ estudiante.fechaNacimiento|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Rutafoto</th>
+                <td>{{ estudiante.rutaFoto }}</td>
+            </tr>
+            <tr>
+                <th>Riesgofamiliarresponsabledespuesescuela</th>
+                <td>{{ estudiante.riesgoFamiliarResponsableDespuesEscuela }}</td>
+            </tr>
+            <tr>
+                <th>Numerocarnetconadis</th>
+                <td>{{ estudiante.numeroCarnetConadis }}</td>
+            </tr>
+            <tr>
+                <th>Carnetconadis</th>
+                <td>{% if estudiante.carnetConadis %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Porcentajediscapacidad</th>
+                <td>{{ estudiante.porcentajeDiscapacidad }}</td>
+            </tr>
+            <tr>
+                <th>Fechaingresoifee</th>
+                <td>{% if estudiante.fechaIngresoIfee %}{{ estudiante.fechaIngresoIfee|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Transportellegada</th>
+                <td>{{ estudiante.transporteLlegada }}</td>
+            </tr>
+            <tr>
+                <th>Telefonotransporte</th>
+                <td>{{ estudiante.telefonoTransporte }}</td>
+            </tr>
+            <tr>
+                <th>Idestudiante</th>
+                <td>{{ estudiante.idEstudiante }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('estudiante_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('estudiante_edit', { 'idEstudiante': estudiante.idEstudiante }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

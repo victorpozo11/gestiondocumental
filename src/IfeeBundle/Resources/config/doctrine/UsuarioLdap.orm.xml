@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\UsuarioLdap" table="usuario_ldap">
+    <id name="idUsuarioLdap" type="integer" column="ID_USUARIO_LDAP">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="usuario" type="text" column="USUARIO" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

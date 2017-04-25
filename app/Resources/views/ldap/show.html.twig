@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ldap</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ ldap.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Puerto</th>
+                <td>{{ ldap.puerto }}</td>
+            </tr>
+            <tr>
+                <th>Domonio</th>
+                <td>{{ ldap.domonio }}</td>
+            </tr>
+            <tr>
+                <th>Basedn</th>
+                <td>{{ ldap.basedn }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ ldap.user }}</td>
+            </tr>
+            <tr>
+                <th>Pass</th>
+                <td>{{ ldap.pass }}</td>
+            </tr>
+            <tr>
+                <th>Idldap</th>
+                <td>{{ ldap.idLdap }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('ldap_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('ldap_edit', { 'idLdap': ldap.idLdap }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

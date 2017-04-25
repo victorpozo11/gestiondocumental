@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Region" table="region">
+    <indexes>
+      <index name="FK_RELATIONSHIP_1" columns="ID_PAIS"/>
+    </indexes>
+    <id name="idRegion" type="integer" column="ID_REGION">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="codigo" type="string" column="CODIGO" length="100" nullable="true"/>
+    <many-to-one field="idPais" target-entity="Pais">
+      <join-columns>
+        <join-column name="ID_PAIS" referenced-column-name="ID_PAIS"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

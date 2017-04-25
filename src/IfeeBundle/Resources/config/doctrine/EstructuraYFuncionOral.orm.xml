@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\EstructuraYFuncionOral" table="estructura_y_funcion_oral">
+    <id name="idEstructuraYFuncionOral" type="integer" column="ID_ESTRUCTURA_Y_FUNCION_ORAL">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="lenguaTamanio" type="text" column="LENGUA_TAMANIO" length="65535" nullable="true"/>
+    <field name="lenguaProtrucionRecta" type="text" column="LENGUA_PROTRUCION_RECTA" length="65535" nullable="true"/>
+    <field name="languaLateralizacionIzq" type="text" column="LANGUA_LATERALIZACION_IZQ" length="65535" nullable="true"/>
+    <field name="lenguaLateralizacionDer" type="text" column="LENGUA_LATERALIZACION_DER" length="65535" nullable="true"/>
+    <field name="lenguaElevacionDientesSuperiores" type="text" column="LENGUA_ELEVACION_DIENTES_SUPERIORES" length="65535" nullable="true"/>
+    <field name="lenguaMovAlternosSacarMeter" type="text" column="LENGUA_MOV_ALTERNOS_SACAR_METER" length="65535" nullable="true"/>
+    <field name="lenguaMovAlternosProducirLa" type="text" column="LENGUA_MOV_ALTERNOS_PRODUCIR_LA" length="65535" nullable="true"/>
+    <field name="lenguaMovAlternosProducirKa" type="text" column="LENGUA_MOV_ALTERNOS_PRODUCIR_KA" length="65535" nullable="true"/>
+    <field name="lenguaMovAlternosVibrar" type="text" column="LENGUA_MOV_ALTERNOS_VIBRAR" length="65535" nullable="true"/>
+    <field name="lenguaAcanalarla" type="text" column="LENGUA_ACANALARLA" length="65535" nullable="true"/>
+    <field name="lenguaTemblores" type="text" column="LENGUA_TEMBLORES" length="65535" nullable="true"/>
+    <field name="lenguaObservaciones" type="text" column="LENGUA_OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="labiosSimetriaForma" type="text" column="LABIOS_SIMETRIA_FORMA" length="65535" nullable="true"/>
+    <field name="labiosProtucion" type="text" column="LABIOS_PROTUCION" length="65535" nullable="true"/>
+    <field name="labiosRetraccion" type="text" column="LABIOS_RETRACCION" length="65535" nullable="true"/>
+    <field name="labiosAbrirCerrarBoca" type="text" column="LABIOS_ABRIR_CERRAR_BOCA" length="65535" nullable="true"/>
+    <field name="labiosApretarBoca" type="text" column="LABIOS_APRETAR_BOCA" length="65535" nullable="true"/>
+    <field name="labiosProduccion" type="text" column="LABIOS_PRODUCCION" length="65535" nullable="true"/>
+    <field name="labiosObservaciones" type="text" column="LABIOS_OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="paladarSimetriaForma" type="text" column="PALADAR_SIMETRIA_FORMA" length="65535" nullable="true"/>
+    <field name="paladarUvula" type="text" column="PALADAR_UVULA" length="65535" nullable="true"/>
+    <field name="paladarMovilidadVelo" type="text" column="PALADAR_MOVILIDAD_VELO" length="65535" nullable="true"/>
+    <field name="paladarObservaciones" type="text" column="PALADAR_OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="dientesImplantacion" type="text" column="DIENTES_IMPLANTACION" length="65535" nullable="true"/>
+    <field name="dientesEstados" type="text" column="DIENTES_ESTADOS" length="65535" nullable="true"/>
+    <field name="dientesOclusion" type="text" column="DIENTES_OCLUSION" length="65535" nullable="true"/>
+    <field name="dientesDentaturaPostiza" type="text" column="DIENTES_DENTATURA_POSTIZA" length="65535" nullable="true"/>
+    <field name="dientesObservaciones" type="text" column="DIENTES_OBSERVACIONES" length="65535" nullable="true"/>
+    <field name="movMaxilarDer" type="text" column="MOV_MAXILAR_DER" length="65535" nullable="true"/>
+    <field name="movMaxilarIzq" type="text" column="MOV_MAXILAR_IZQ" length="65535" nullable="true"/>
+    <field name="movMaxilarAdelante" type="text" column="MOV_MAXILAR_ADELANTE" length="65535" nullable="true"/>
+    <field name="movMaxilarRotacion" type="text" column="MOV_MAXILAR_ROTACION" length="65535" nullable="true"/>
+    <field name="reportePacienteDeglutirVoluntario" type="boolean" column="REPORTE_PACIENTE_DEGLUTIR_VOLUNTARIO" nullable="true"/>
+    <field name="reportePacienteDeglutirInvoluntario" type="boolean" column="REPORTE_PACIENTE_DEGLUTIR_INVOLUNTARIO" nullable="true"/>
+    <field name="reportePacienteMasticar" type="text" column="REPORTE_PACIENTE_MASTICAR" length="65535" nullable="true"/>
+    <field name="reportePacienteCarraspear" type="text" column="REPORTE_PACIENTE_CARRASPEAR" length="65535" nullable="true"/>
+    <field name="reportePacienteCialorrea" type="text" column="REPORTE_PACIENTE_CIALORREA" length="65535" nullable="true"/>
+    <field name="reportePacienteReflejoPaladar" type="text" column="REPORTE_PACIENTE_REFLEJO_PALADAR" length="65535" nullable="true"/>
+    <field name="reportePacienteDificultadMovOrales" type="text" column="REPORTE_PACIENTE_DIFICULTAD_MOV_ORALES" length="65535" nullable="true"/>
+    <field name="reportePacienteObservaciones" type="text" column="REPORTE_PACIENTE_OBSERVACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

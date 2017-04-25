@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Personacontacto</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nombres</th>
+                <td>{{ personaContacto.nombres }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ personaContacto.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Cedula</th>
+                <td>{{ personaContacto.cedula }}</td>
+            </tr>
+            <tr>
+                <th>Ocupacion</th>
+                <td>{{ personaContacto.ocupacion }}</td>
+            </tr>
+            <tr>
+                <th>Discapacidad</th>
+                <td>{% if personaContacto.discapacidad %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Usatelefono</th>
+                <td>{% if personaContacto.usaTelefono %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Telefono2</th>
+                <td>{{ personaContacto.telefono2 }}</td>
+            </tr>
+            <tr>
+                <th>Telefono3</th>
+                <td>{{ personaContacto.telefono3 }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ personaContacto.edad }}</td>
+            </tr>
+            <tr>
+                <th>Fechanacimiento</th>
+                <td>{% if personaContacto.fechaNacimiento %}{{ personaContacto.fechaNacimiento|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Fechadefuncion</th>
+                <td>{% if personaContacto.fechaDefuncion %}{{ personaContacto.fechaDefuncion|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Estadocivil</th>
+                <td>{{ personaContacto.estadoCivil }}</td>
+            </tr>
+            <tr>
+                <th>Instruccion</th>
+                <td>{{ personaContacto.instruccion }}</td>
+            </tr>
+            <tr>
+                <th>Profesion</th>
+                <td>{{ personaContacto.profesion }}</td>
+            </tr>
+            <tr>
+                <th>Lugartrabajo</th>
+                <td>{{ personaContacto.lugarTrabajo }}</td>
+            </tr>
+            <tr>
+                <th>Descripciondiscapacidad</th>
+                <td>{{ personaContacto.descripcionDiscapacidad }}</td>
+            </tr>
+            <tr>
+                <th>Idcontacto</th>
+                <td>{{ personaContacto.idContacto }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('personacontacto_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('personacontacto_edit', { 'idContacto': personaContacto.idContacto }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

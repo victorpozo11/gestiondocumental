@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Habilidade</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Etapa</th>
+                <td>{{ habilidade.etapa }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ habilidade.edad }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ habilidade.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Idhabilidad</th>
+                <td>{{ habilidade.idHabilidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('habilidades_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('habilidades_edit', { 'idHabilidad': habilidade.idHabilidad }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

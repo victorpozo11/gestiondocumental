@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Estructurafamiliars list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Parentesco</th>
+                <th>Edad</th>
+                <th>Instruccion</th>
+                <th>Ocupacion</th>
+                <th>Discapacidad</th>
+                <th>Descripciondiscapacidad</th>
+                <th>Observacion</th>
+                <th>Convive</th>
+                <th>Idconvive</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for estructuraFamiliar in estructuraFamiliars %}
+            <tr>
+                <td><a href="{{ path('estructurafamiliar_show', { 'idConvive': estructuraFamiliar.idConvive }) }}">{{ estructuraFamiliar.nombres }}</a></td>
+                <td>{{ estructuraFamiliar.apellidos }}</td>
+                <td>{{ estructuraFamiliar.parentesco }}</td>
+                <td>{{ estructuraFamiliar.edad }}</td>
+                <td>{{ estructuraFamiliar.instruccion }}</td>
+                <td>{{ estructuraFamiliar.ocupacion }}</td>
+                <td>{% if estructuraFamiliar.discapacidad %}Yes{% else %}No{% endif %}</td>
+                <td>{{ estructuraFamiliar.descripcionDiscapacidad }}</td>
+                <td>{{ estructuraFamiliar.observacion }}</td>
+                <td>{% if estructuraFamiliar.convive %}Yes{% else %}No{% endif %}</td>
+                <td>{{ estructuraFamiliar.idConvive }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('estructurafamiliar_show', { 'idConvive': estructuraFamiliar.idConvive }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('estructurafamiliar_edit', { 'idConvive': estructuraFamiliar.idConvive }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('estructurafamiliar_new') }}">Create a new estructuraFamiliar</a>
+        </li>
+    </ul>
+{% endblock %}

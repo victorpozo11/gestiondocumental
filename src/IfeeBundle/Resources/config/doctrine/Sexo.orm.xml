@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\Sexo" table="sexo">
+    <id name="idSexo" type="integer" column="ID_SEXO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="sexo" type="text" column="SEXO" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

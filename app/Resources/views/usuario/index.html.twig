@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Usuarios list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cedula</th>
+                <th>Direccion</th>
+                <th>Usatelefono</th>
+                <th>Email</th>
+                <th>Usuario</th>
+                <th>Password</th>
+                <th>Salt</th>
+                <th>Isldap</th>
+                <th>Dientesestados</th>
+                <th>Fechaexpiracion</th>
+                <th>Rutafoto</th>
+                <th>Accion</th>
+                <th>Idusuario</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for usuario in usuarios %}
+            <tr>
+                <td><a href="{{ path('usuario_show', { 'idUsuario': usuario.idUsuario }) }}">{{ usuario.cedula }}</a></td>
+                <td>{{ usuario.direccion }}</td>
+                <td>{% if usuario.usaTelefono %}Yes{% else %}No{% endif %}</td>
+                <td>{{ usuario.email }}</td>
+                <td>{{ usuario.usuario }}</td>
+                <td>{{ usuario.password }}</td>
+                <td>{{ usuario.salt }}</td>
+                <td>{% if usuario.isldap %}Yes{% else %}No{% endif %}</td>
+                <td>{{ usuario.dientesEstados }}</td>
+                <td>{% if usuario.fechaExpiracion %}{{ usuario.fechaExpiracion|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ usuario.rutaFoto }}</td>
+                <td>{{ usuario.accion }}</td>
+                <td>{{ usuario.idUsuario }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('usuario_show', { 'idUsuario': usuario.idUsuario }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('usuario_edit', { 'idUsuario': usuario.idUsuario }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('usuario_new') }}">Create a new usuario</a>
+        </li>
+    </ul>
+{% endblock %}

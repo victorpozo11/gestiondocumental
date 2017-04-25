@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\HistorialEducativo" table="historial_educativo">
+    <id name="idHistorial" type="integer" column="ID_HISTORIAL">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nivel" type="text" column="NIVEL" length="65535" nullable="true"/>
+    <field name="cumple" type="boolean" column="CUMPLE" nullable="true"/>
+    <field name="lugar" type="text" column="LUGAR" length="65535" nullable="true"/>
+    <field name="edadDesde" type="integer" column="EDAD_DESDE" nullable="true"/>
+    <field name="edadHasta" type="integer" column="EDAD_HASTA" nullable="true"/>
+    <field name="observaciones" type="text" column="OBSERVACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

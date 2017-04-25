@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\HistoricoInformacion" table="historico_informacion">
+    <indexes>
+      <index name="FK_RELATIONSHIP_12" columns="ID_ESTUDIANTE"/>
+      <index name="FK_RELATIONSHIP_13" columns="ID_PSICOLOGIA2"/>
+      <index name="FK_RELATIONSHIP_14" columns="ID_VIVIENDA"/>
+      <index name="FK_RELATIONSHIP_15" columns="ID_SALUD"/>
+      <index name="FK_RELATIONSHIP_16" columns="ID_EGRESOS"/>
+      <index name="FK_RELATIONSHIP_17" columns="ID_INGRESOS"/>
+      <index name="FK_RELATIONSHIP_18" columns="ID_DESARROLLO_MOTOR"/>
+      <index name="FK_RELATIONSHIP_19" columns="ID_LOGOPEDICA"/>
+      <index name="FK_RELATIONSHIP_21" columns="ID_ANTECEDENTES_PATOLOGICOS"/>
+      <index name="FK_RELATIONSHIP_22" columns="ID_ESTRUCTURA_Y_FUNCION_ORAL"/>
+      <index name="FK_RELATIONSHIP_23" columns="ID_APRENDIZAJE"/>
+      <index name="FK_RELATIONSHIP_24" columns="ID_HISTORIAL"/>
+      <index name="FK_RELATIONSHIP_25" columns="ID_HABILIDAD"/>
+      <index name="FK_RELATIONSHIP_26" columns="ID_MOTRICIDAD"/>
+      <index name="FK_RELATIONSHIP_27" columns="ID_CONDUCTA"/>
+      <index name="FK_RELATIONSHIP_28" columns="ID_CONVIVE"/>
+      <index name="FK_RELATIONSHIP_29" columns="ID_SEGUIMIENTO"/>
+      <index name="FK_RELATIONSHIP_31" columns="ID_CONSULTA"/>
+    </indexes>
+    <id name="idHistorico" type="integer" column="ID_HISTORICO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fecha" type="date" column="FECHA" nullable="true"/>
+    <field name="descripcion" type="text" column="DESCRIPCION" length="65535" nullable="true"/>
+    <many-to-one field="idHabilidad" target-entity="Habilidades">
+      <join-columns>
+        <join-column name="ID_HABILIDAD" referenced-column-name="ID_HABILIDAD"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idHistorial" target-entity="HistorialEducativo">
+      <join-columns>
+        <join-column name="ID_HISTORIAL" referenced-column-name="ID_HISTORIAL"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idAprendizaje" target-entity="AprendizajeBasico">
+      <join-columns>
+        <join-column name="ID_APRENDIZAJE" referenced-column-name="ID_APRENDIZAJE"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idMotricidad" target-entity="Motricidad">
+      <join-columns>
+        <join-column name="ID_MOTRICIDAD" referenced-column-name="ID_MOTRICIDAD"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idConducta" target-entity="Conducta">
+      <join-columns>
+        <join-column name="ID_CONDUCTA" referenced-column-name="ID_CONDUCTA"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idConsulta" target-entity="ConsultaMedica">
+      <join-columns>
+        <join-column name="ID_CONSULTA" referenced-column-name="ID_CONSULTA"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idSeguimiento" target-entity="SeguimientoEstudiante">
+      <join-columns>
+        <join-column name="ID_SEGUIMIENTO" referenced-column-name="ID_SEGUIMIENTO"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idConvive" target-entity="EstructuraFamiliar">
+      <join-columns>
+        <join-column name="ID_CONVIVE" referenced-column-name="ID_CONVIVE"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idEstructuraYFuncionOral" target-entity="EstructuraYFuncionOral">
+      <join-columns>
+        <join-column name="ID_ESTRUCTURA_Y_FUNCION_ORAL" referenced-column-name="ID_ESTRUCTURA_Y_FUNCION_ORAL"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idAntecedentesPatologicos" target-entity="AntecedentesPatologicos">
+      <join-columns>
+        <join-column name="ID_ANTECEDENTES_PATOLOGICOS" referenced-column-name="ID_ANTECEDENTES_PATOLOGICOS"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idSalud" target-entity="InformacionSalud">
+      <join-columns>
+        <join-column name="ID_SALUD" referenced-column-name="ID_SALUD"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idVivienda" target-entity="Vivienda">
+      <join-columns>
+        <join-column name="ID_VIVIENDA" referenced-column-name="ID_VIVIENDA"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idPsicologia2" target-entity="HistorialDesarrolloSocioafectivo">
+      <join-columns>
+        <join-column name="ID_PSICOLOGIA2" referenced-column-name="ID_PSICOLOGIA2"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idEgresos" target-entity="EgresosSituacionEconomica">
+      <join-columns>
+        <join-column name="ID_EGRESOS" referenced-column-name="ID_EGRESOS"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idIngresos" target-entity="IngresosSituacionEconomica">
+      <join-columns>
+        <join-column name="ID_INGRESOS" referenced-column-name="ID_INGRESOS"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idLogopedica" target-entity="FichaLogopedica">
+      <join-columns>
+        <join-column name="ID_LOGOPEDICA" referenced-column-name="ID_LOGOPEDICA"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idDesarrolloMotor" target-entity="DesarrolloMotorYLenguaje">
+      <join-columns>
+        <join-column name="ID_DESARROLLO_MOTOR" referenced-column-name="ID_DESARROLLO_MOTOR"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idEstudiante" target-entity="Estudiante">
+      <join-columns>
+        <join-column name="ID_ESTUDIANTE" referenced-column-name="ID_ESTUDIANTE"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

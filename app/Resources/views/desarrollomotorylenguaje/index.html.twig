@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Desarrollomotorylenguajes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Motorsostencefalico</th>
+                <th>Motorgiros</th>
+                <th>Motorposicionsentada</th>
+                <th>Motorgateo</th>
+                <th>Motorbepedestacion</th>
+                <th>Motormarcha</th>
+                <th>Lenguajesonrisasocial</th>
+                <th>Lenguajebalbuceo</th>
+                <th>Lenguajefrases</th>
+                <th>Lenguajecomunicaactualmente</th>
+                <th>Lenguajegorgeo</th>
+                <th>Lenguajeprimerapalabra</th>
+                <th>Lenguajeoraciones</th>
+                <th>Iddesarrollomotor</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for desarrolloMotorYLenguaje in desarrolloMotorYLenguajes %}
+            <tr>
+                <td><a href="{{ path('desarrollomotorylenguaje_show', { 'idDesarrolloMotor': desarrolloMotorYLenguaje.idDesarrolloMotor }) }}">{{ desarrolloMotorYLenguaje.motorSostenCefalico }}</a></td>
+                <td>{{ desarrolloMotorYLenguaje.motorGiros }}</td>
+                <td>{{ desarrolloMotorYLenguaje.motorPosicionSentada }}</td>
+                <td>{{ desarrolloMotorYLenguaje.motorGateo }}</td>
+                <td>{{ desarrolloMotorYLenguaje.motorBepedestacion }}</td>
+                <td>{{ desarrolloMotorYLenguaje.motorMarcha }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeSonrisaSocial }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeBalbuceo }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeFrases }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeComunicaActualmente }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeGorgeo }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajePrimeraPalabra }}</td>
+                <td>{{ desarrolloMotorYLenguaje.lenguajeOraciones }}</td>
+                <td>{{ desarrolloMotorYLenguaje.idDesarrolloMotor }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('desarrollomotorylenguaje_show', { 'idDesarrolloMotor': desarrolloMotorYLenguaje.idDesarrolloMotor }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('desarrollomotorylenguaje_edit', { 'idDesarrolloMotor': desarrolloMotorYLenguaje.idDesarrolloMotor }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('desarrollomotorylenguaje_new') }}">Create a new desarrolloMotorYLenguaje</a>
+        </li>
+    </ul>
+{% endblock %}

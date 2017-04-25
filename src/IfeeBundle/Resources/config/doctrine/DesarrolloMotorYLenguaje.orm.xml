@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="IfeeBundle\Entity\DesarrolloMotorYLenguaje" table="desarrollo_motor_y_lenguaje">
+    <id name="idDesarrolloMotor" type="integer" column="ID_DESARROLLO_MOTOR">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="motorSostenCefalico" type="text" column="MOTOR_SOSTEN_CEFALICO" length="65535" nullable="true"/>
+    <field name="motorGiros" type="text" column="MOTOR_GIROS" length="65535" nullable="true"/>
+    <field name="motorPosicionSentada" type="text" column="MOTOR_POSICION_SENTADA" length="65535" nullable="true"/>
+    <field name="motorGateo" type="text" column="MOTOR_GATEO" length="65535" nullable="true"/>
+    <field name="motorBepedestacion" type="text" column="MOTOR_BEPEDESTACION" length="65535" nullable="true"/>
+    <field name="motorMarcha" type="text" column="MOTOR_MARCHA" length="65535" nullable="true"/>
+    <field name="lenguajeSonrisaSocial" type="text" column="LENGUAJE_SONRISA_SOCIAL" length="65535" nullable="true"/>
+    <field name="lenguajeBalbuceo" type="text" column="LENGUAJE_BALBUCEO" length="65535" nullable="true"/>
+    <field name="lenguajeFrases" type="text" column="LENGUAJE_FRASES" length="65535" nullable="true"/>
+    <field name="lenguajeComunicaActualmente" type="text" column="LENGUAJE_COMUNICA_ACTUALMENTE" length="65535" nullable="true"/>
+    <field name="lenguajeGorgeo" type="text" column="LENGUAJE_GORGEO" length="65535" nullable="true"/>
+    <field name="lenguajePrimeraPalabra" type="text" column="LENGUAJE_PRIMERA_PALABRA" length="65535" nullable="true"/>
+    <field name="lenguajeOraciones" type="text" column="LENGUAJE_ORACIONES" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Personacontactos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Ocupacion</th>
+                <th>Discapacidad</th>
+                <th>Usatelefono</th>
+                <th>Telefono2</th>
+                <th>Telefono3</th>
+                <th>Edad</th>
+                <th>Fechanacimiento</th>
+                <th>Fechadefuncion</th>
+                <th>Estadocivil</th>
+                <th>Instruccion</th>
+                <th>Profesion</th>
+                <th>Lugartrabajo</th>
+                <th>Descripciondiscapacidad</th>
+                <th>Idcontacto</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for personaContacto in personaContactos %}
+            <tr>
+                <td><a href="{{ path('personacontacto_show', { 'idContacto': personaContacto.idContacto }) }}">{{ personaContacto.nombres }}</a></td>
+                <td>{{ personaContacto.apellidos }}</td>
+                <td>{{ personaContacto.cedula }}</td>
+                <td>{{ personaContacto.ocupacion }}</td>
+                <td>{% if personaContacto.discapacidad %}Yes{% else %}No{% endif %}</td>
+                <td>{% if personaContacto.usaTelefono %}Yes{% else %}No{% endif %}</td>
+                <td>{{ personaContacto.telefono2 }}</td>
+                <td>{{ personaContacto.telefono3 }}</td>
+                <td>{{ personaContacto.edad }}</td>
+                <td>{% if personaContacto.fechaNacimiento %}{{ personaContacto.fechaNacimiento|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if personaContacto.fechaDefuncion %}{{ personaContacto.fechaDefuncion|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ personaContacto.estadoCivil }}</td>
+                <td>{{ personaContacto.instruccion }}</td>
+                <td>{{ personaContacto.profesion }}</td>
+                <td>{{ personaContacto.lugarTrabajo }}</td>
+                <td>{{ personaContacto.descripcionDiscapacidad }}</td>
+                <td>{{ personaContacto.idContacto }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('personacontacto_show', { 'idContacto': personaContacto.idContacto }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('personacontacto_edit', { 'idContacto': personaContacto.idContacto }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('personacontacto_new') }}">Create a new personaContacto</a>
+        </li>
+    </ul>
+{% endblock %}
