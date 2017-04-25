@@ -39,7 +39,7 @@ class AntecedentesController extends Controller
      */
     public function newAction(Request $request)
     {
-        $antecedente = new Antecedente();
+        $antecedente = new Antecedentes();
         $form = $this->createForm('IfeeBundle\Form\AntecedentesType', $antecedente);
         $form->handleRequest($request);
 
