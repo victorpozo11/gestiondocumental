@@ -1,3 +1,8 @@
+ifee_bundle_ifee:
+    resource: "@IfeeBundleIfeeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
