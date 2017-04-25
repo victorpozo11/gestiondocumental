@@ -1,0 +1,4 @@
+services:
+#    ifee_bundle_ifee.example:
+#        class: Ifee\Bundle\IfeeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
