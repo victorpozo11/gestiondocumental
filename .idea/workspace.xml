@@ -1,256 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd99d9fb-3200-4714-92fb-5097290943af" name="Default" comment="CRUD 3 primeros módulos">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentes/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentes/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentes/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentes/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentespatologicos/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentespatologicos/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentespatologicos/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/antecedentespatologicos/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/aprendizajebasico/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/aprendizajebasico/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/aprendizajebasico/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/aprendizajebasico/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ciudad/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ciudad/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ciudad/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ciudad/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/conducta/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/conducta/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/conducta/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/conducta/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/consultamedica/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/consultamedica/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/consultamedica/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/consultamedica/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/datospersonal/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/datospersonal/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/datospersonal/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/datospersonal/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/desarrollomotorylenguaje/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/desarrollomotorylenguaje/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/desarrollomotorylenguaje/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/desarrollomotorylenguaje/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/documentoestudiante/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/documentoestudiante/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/documentoestudiante/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/documentoestudiante/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/egresossituacioneconomica/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/egresossituacioneconomica/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/egresossituacioneconomica/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/egresossituacioneconomica/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/entidad/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/entidad/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/entidad/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/entidad/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurafamiliar/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurafamiliar/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurafamiliar/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurafamiliar/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurayfuncionoral/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurayfuncionoral/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurayfuncionoral/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estructurayfuncionoral/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estudiante/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estudiante/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estudiante/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/estudiante/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichalogopedica/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichalogopedica/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichalogopedica/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichalogopedica/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/habilidades/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/habilidades/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/habilidades/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/habilidades/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialdesarrollosocioafectivo/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialdesarrollosocioafectivo/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialdesarrollosocioafectivo/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialdesarrollosocioafectivo/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialeducativo/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialeducativo/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialeducativo/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historialeducativo/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historicoinformacion/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historicoinformacion/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historicoinformacion/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/historicoinformacion/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/informacionsalud/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/informacionsalud/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/informacionsalud/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/informacionsalud/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ingresossituacioneconomica/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ingresossituacioneconomica/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ingresossituacioneconomica/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ingresossituacioneconomica/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ldap/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ldap/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ldap/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/ldap/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/motricidad/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/motricidad/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/motricidad/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/motricidad/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pais/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pais/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pais/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pais/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/parroquia/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/parroquia/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/parroquia/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/parroquia/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/personacontacto/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/personacontacto/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/personacontacto/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/personacontacto/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/provincia/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/provincia/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/provincia/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/provincia/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/region/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/region/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/region/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/region/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/role/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/role/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/role/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/role/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/seguimientoestudiante/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/seguimientoestudiante/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/seguimientoestudiante/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/seguimientoestudiante/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/sexo/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/sexo/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/sexo/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/sexo/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/trazauser/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/trazauser/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/trazauser/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/trazauser/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuario/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuario/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuario/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuario/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuarioldap/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuarioldap/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuarioldap/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/usuarioldap/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/vivienda/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/vivienda/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/vivienda/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/vivienda/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesPatologicosController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/AprendizajeBasicoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/CiudadController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/ConductaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/ConsultaMedicaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/DatosPersonalController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/DefaultController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/DesarrolloMotorYLenguajeController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/DocumentoEstudianteController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/EgresosSituacionEconomicaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/EntidadController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/EstructuraFamiliarController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/EstructuraYFuncionOralController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/EstudianteController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/FichaLogopedicaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/HabilidadesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/HistorialDesarrolloSocioafectivoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/HistorialEducativoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/HistoricoInformacionController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/InformacionSaludController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/IngresosSituacionEconomicaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/LdapController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/MotricidadController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/ParroquiaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/PersonaContactoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/ProvinciaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/RegionController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/RoleController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/SeguimientoEstudianteController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/SexoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/TrazaUserController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/UsuarioController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/UsuarioLdapController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/ViviendaController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/AntecedentesPatologicosType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/AntecedentesType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/AprendizajeBasicoType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/CiudadType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/ConductaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/ConsultaMedicaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/DatosPersonalType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/DesarrolloMotorYLenguajeType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/DocumentoEstudianteType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/EgresosSituacionEconomicaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/EntidadType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/EstructuraFamiliarType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/EstructuraYFuncionOralType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/EstudianteType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/FichaLogopedicaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/HabilidadesType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/HistorialDesarrolloSocioafectivoType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/HistorialEducativoType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/HistoricoInformacionType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/InformacionSaludType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/IngresosSituacionEconomicaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/LdapType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/MotricidadType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/PaisType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/ParroquiaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/PersonaContactoType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/ProvinciaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/RegionType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/RoleType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/SeguimientoEstudianteType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/SexoType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/TrazaUserType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/UsuarioLdapType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/UsuarioType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Form/ViviendaType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/AntecedentesControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/AntecedentesPatologicosControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/AprendizajeBasicoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/CiudadControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/ConductaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/ConsultaMedicaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/DatosPersonalControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/DesarrolloMotorYLenguajeControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/DocumentoEstudianteControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/EgresosSituacionEconomicaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/EntidadControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/EstructuraFamiliarControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/EstructuraYFuncionOralControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/EstudianteControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/FichaLogopedicaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/HabilidadesControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/HistorialDesarrolloSocioafectivoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/HistorialEducativoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/HistoricoInformacionControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/InformacionSaludControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/IngresosSituacionEconomicaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/LdapControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/MotricidadControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/PaisControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/ParroquiaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/PersonaContactoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/ProvinciaControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/RegionControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/RoleControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/SeguimientoEstudianteControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/SexoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/TrazaUserControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/UsuarioControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/UsuarioLdapControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IfeeBundle/Tests/Controller/ViviendaControllerTest.php" afterPath="" />
+    <list default="true" id="dd99d9fb-3200-4714-92fb-5097290943af" name="Default" comment="Ajuste CRUD">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php" afterPath="$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -265,36 +19,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DatosPersonal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/DatosPersonal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="292" column="4" lean-forward="false" selection-start-line="292" selection-start-column="4" selection-end-line="295" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="406" column="34" lean-forward="false" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config_prod.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -325,12 +49,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AntecedentesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AntecedentesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="290">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaisController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/logs/prod.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <marker date="1493179182643" expanded="true" signature="60674:60691" ph="..." />
+                <marker date="1493179182643" expanded="true" signature="60674:60709" ph="..." />
+                <marker date="1493179182643" expanded="true" signature="60674:60722" ph="..." />
+                <marker date="1493179182643" expanded="true" signature="60674:60737" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -340,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
               <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -442,8 +201,10 @@
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/PersonaContacto.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Estudiante.php" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Entity/Usuario.php" />
-        <option value="$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesController.php" />
+        <option value="$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -540,6 +301,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -595,6 +370,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestiondocumental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,7 +561,7 @@
       <workItem from="1493045559786" duration="145000" />
       <workItem from="1493089776505" duration="5591000" />
       <workItem from="1493130897931" duration="3734000" />
-      <workItem from="1493172929407" duration="4809000" />
+      <workItem from="1493172929407" duration="5677000" />
     </task>
     <task id="LOCAL-00001" summary="archivos Base de Datos gestión docuemental v1.0">
       <created>1493011841755</created>
@@ -796,17 +647,23 @@
       <option name="project" value="LOCAL" />
       <updated>1493176823583</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ajuste CRUD">
+      <created>1493178533486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1493178533486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17406000" />
+    <option name="totallyTimeSpent" value="18274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -854,29 +711,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="archivos Base de Datos gestión docuemental v1.0" />
     <MESSAGE value="CRUD 3 primeros módulos" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD 3 primeros módulos" />
+    <MESSAGE value="Ajuste CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste CRUD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/HistorialDesarrolloSocioafectivo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="1764" column="0" lean-forward="true" selection-start-line="1764" selection-start-column="0" selection-end-line="1764" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/HistorialEducativo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/HistoricoInformacion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -945,14 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1222,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1246,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Entity/Antecedentes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -1262,10 +1080,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <marker date="1493179182643" expanded="true" signature="60674:60691" ph="..." />
+            <marker date="1493179182643" expanded="true" signature="60674:60709" ph="..." />
+            <marker date="1493179182643" expanded="true" signature="60674:60722" ph="..." />
+            <marker date="1493179182643" expanded="true" signature="60674:60737" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/AntecedentesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="290">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IfeeBundle/Controller/PaisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/logs/prod.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>

@@ -39,7 +39,7 @@ class PaisController extends Controller
      */
     public function newAction(Request $request)
     {
-        $pai = new Pai();
+        $pai = new Pais();
         $form = $this->createForm('IfeeBundle\Form\PaisType', $pai);
         $form->handleRequest($request);
 
