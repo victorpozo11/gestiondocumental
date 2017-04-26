@@ -13,7 +13,7 @@ class EstudianteType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nombres')->add('apellidos')->add('cedula')->add('domicilio')->add('sector')->add('cambioDomicilio')->add('usaTelefono')->add('edad')->add('fechaNacimiento')->add('rutaFoto')->add('riesgoFamiliarResponsableDespuesEscuela')->add('numeroCarnetConadis')->add('carnetConadis')->add('porcentajeDiscapacidad')->add('fechaIngresoIfee')->add('transporteLlegada')->add('telefonoTransporte')->add('idPais')->add('idRegion')->add('idProvincia')->add('idCiudad')->add('idParroquia');
+        $builder->add('nombres')->add('apellidos')->add('cedula')->add('domicilio')->add('sector')->add('cambioDomicilio')->add('usaTelefono')->add('edad')->add('fechaNacimiento')->add('rutaFoto')->add('riesgoFamiliarResponsableDespuesEscuela')->add('numeroCarnetConadis')->add('carnetConadis')->add('porcentajeDiscapacidad')->add('fechaIngresoIfee')->add('transporteLlegada')->add('telefonoTransporte')->add('telefono')->add('idPais')->add('idRegion')->add('idProvincia')->add('idCiudad')->add('idParroquia');
     }
     
     /**

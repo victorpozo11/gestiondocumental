@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Codigo</th>
+                <th>Nombre</th>
                 <th>Idprovincia</th>
                 <th>Actions</th>
             </tr>
@@ -15,6 +16,7 @@
         {% for provincium in provincias %}
             <tr>
                 <td><a href="{{ path('provincia_show', { 'idProvincia': provincium.idProvincia }) }}">{{ provincium.codigo }}</a></td>
+                <td>{{ provincium.nombre }}</td>
                 <td>{{ provincium.idProvincia }}</td>
                 <td>
                     <ul>

@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Codigo</th>
+                <th>Nombre</th>
                 <th>Idparroquia</th>
                 <th>Actions</th>
             </tr>
@@ -15,6 +16,7 @@
         {% for parroquium in parroquias %}
             <tr>
                 <td><a href="{{ path('parroquia_show', { 'idParroquia': parroquium.idParroquia }) }}">{{ parroquium.codigo }}</a></td>
+                <td>{{ parroquium.nombre }}</td>
                 <td>{{ parroquium.idParroquia }}</td>
                 <td>
                     <ul>

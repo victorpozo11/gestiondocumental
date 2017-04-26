@@ -13,7 +13,7 @@ class UsuarioType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('cedula')->add('direccion')->add('usaTelefono')->add('email')->add('usuario')->add('password')->add('salt')->add('isldap')->add('dientesEstados')->add('fechaExpiracion')->add('rutaFoto')->add('accion')->add('idSexo')->add('idRole');
+        $builder->add('cedula')->add('direccion')->add('usaTelefono')->add('email')->add('usuario')->add('password')->add('salt')->add('isldap')->add('dientesEstados')->add('fechaExpiracion')->add('rutaFoto')->add('accion')->add('telefono')->add('idSexo')->add('idRole');
     }
     
     /**

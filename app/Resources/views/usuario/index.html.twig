@@ -18,6 +18,7 @@
                 <th>Fechaexpiracion</th>
                 <th>Rutafoto</th>
                 <th>Accion</th>
+                <th>Telefono</th>
                 <th>Idusuario</th>
                 <th>Actions</th>
             </tr>
@@ -37,6 +38,7 @@
                 <td>{% if usuario.fechaExpiracion %}{{ usuario.fechaExpiracion|date('Y-m-d') }}{% endif %}</td>
                 <td>{{ usuario.rutaFoto }}</td>
                 <td>{{ usuario.accion }}</td>
+                <td>{{ usuario.telefono }}</td>
                 <td>{{ usuario.idUsuario }}</td>
                 <td>
                     <ul>

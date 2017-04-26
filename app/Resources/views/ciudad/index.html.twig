@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Codigo</th>
+                <th>Nombre</th>
                 <th>Idciudad</th>
                 <th>Actions</th>
             </tr>
@@ -15,6 +16,7 @@
         {% for ciudad in ciudads %}
             <tr>
                 <td><a href="{{ path('ciudad_show', { 'idCiudad': ciudad.idCiudad }) }}">{{ ciudad.codigo }}</a></td>
+                <td>{{ ciudad.nombre }}</td>
                 <td>{{ ciudad.idCiudad }}</td>
                 <td>
                     <ul>

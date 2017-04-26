@@ -13,7 +13,7 @@ class CiudadType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('codigo')->add('idProvincia');
+        $builder->add('codigo')->add('nombre')->add('idProvincia');
     }
     
     /**

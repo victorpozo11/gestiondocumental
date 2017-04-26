@@ -13,7 +13,7 @@ class ProvinciaType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('codigo')->add('idRegion');
+        $builder->add('codigo')->add('nombre')->add('idRegion');
     }
     
     /**

@@ -13,7 +13,7 @@ class PersonaContactoType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nombres')->add('apellidos')->add('cedula')->add('ocupacion')->add('discapacidad')->add('usaTelefono')->add('telefono2')->add('telefono3')->add('edad')->add('fechaNacimiento')->add('fechaDefuncion')->add('estadoCivil')->add('instruccion')->add('profesion')->add('lugarTrabajo')->add('descripcionDiscapacidad');
+        $builder->add('nombres')->add('apellidos')->add('cedula')->add('ocupacion')->add('discapacidad')->add('usaTelefono')->add('telefono2')->add('telefono3')->add('edad')->add('fechaNacimiento')->add('fechaDefuncion')->add('estadoCivil')->add('instruccion')->add('profesion')->add('lugarTrabajo')->add('descripcionDiscapacidad')->add('telefono');
     }
     
     /**

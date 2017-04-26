@@ -13,7 +13,7 @@ class RegionType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('codigo')->add('idPais');
+        $builder->add('codigo')->add('nombre')->add('idPais');
     }
     
     /**
