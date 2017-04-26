@@ -1,41 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 26-04-2017 a las 06:18:34
--- Versión del servidor: 10.1.21-MariaDB
--- Versión de PHP: 5.6.30
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de datos: `ctrlasisbk`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `parroquia`
---
-
-CREATE TABLE `parroquia` (
-  `ID_PARROQUIA` int(11) NOT NULL,
-  `ID_CIUDAD` int(11) NOT NULL,
-  `NOMBRE` varchar(100) NOT NULL,
-  `CODIGO` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `parroquia`
---
 
 INSERT INTO `parroquia` (`ID_PARROQUIA`, `ID_CIUDAD`, `NOMBRE`, `CODIGO`) VALUES
 (1, 1, 'BELLAVISTA', 10101),
@@ -1432,37 +1395,3 @@ INSERT INTO `parroquia` (`ID_PARROQUIA`, `ID_CIUDAD`, `NOMBRE`, `CODIGO`) VALUES
 (1397, 222, 'LAS GOLONDRINAS', 900151),
 (1398, 223, 'MANGA DEL CURA', 900351),
 (1399, 224, 'EL PIEDRERO', 900451);
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `parroquia`
---
-ALTER TABLE `parroquia`
-  ADD PRIMARY KEY (`ID_PARROQUIA`),
-  ADD KEY `FK_RELATIONSHIP_7` (`ID_CIUDAD`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `parroquia`
---
-ALTER TABLE `parroquia`
-  MODIFY `ID_PARROQUIA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1400;
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `parroquia`
---
-ALTER TABLE `parroquia`
-  ADD CONSTRAINT `FK_RELATIONSHIP_7` FOREIGN KEY (`ID_CIUDAD`) REFERENCES `ciudad` (`ID_CIUDAD`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
