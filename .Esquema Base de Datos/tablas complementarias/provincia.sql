@@ -1,0 +1,28 @@
+
+
+INSERT INTO `provincia` (`ID_PROVINCIA`, `ID_REGION`, `NOMBRE`, `CODIGO`) VALUES
+(1, 1, 'AZUAY', 1),
+(2, 1, 'BOLIVAR', 2),
+(3, 1, 'CA?AR', 3),
+(4, 1, 'CARCHI', 4),
+(5, 1, 'COTOPAXI', 5),
+(6, 1, 'CHIMBORAZO', 6),
+(7, 2, 'EL ORO', 7),
+(8, 2, 'ESMERALDAS', 8),
+(9, 2, 'GUAYAS', 9),
+(10, 1, 'IMBABURA', 10),
+(11, 1, 'LOJA', 11),
+(12, 2, 'LOS RIOS', 12),
+(13, 2, 'MANABI', 13),
+(14, 3, 'MORONA SANTIAGO', 14),
+(15, 3, 'NAPO', 15),
+(16, 3, 'PASTAZA', 16),
+(17, 1, 'PICHINCHA', 17),
+(18, 1, 'TUNGURAHUA', 18),
+(19, 3, 'ZAMORA CHINCHIPE', 19),
+(20, 4, 'GALAPAGOS', 20),
+(21, 3, 'SUCUMBIOS', 21),
+(22, 3, 'ORELLANA', 22),
+(23, 1, 'SANTO DOMINGO DE LOS TSACHILAS', 23),
+(24, 2, 'SANTA ELENA', 24),
+(25, 1, 'ZONAS NO DELIMITADAS', 90);
